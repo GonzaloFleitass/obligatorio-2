@@ -7,6 +7,10 @@
 
 #ifndef consulta_h
 #define consulta_h
+#include <stdio.h>
+#include "Fecha.h"
+#include "String.h"
+#include "Evaluacion.h"
 typedef struct {
     Fecha Fech;
     string motivoConsulta;

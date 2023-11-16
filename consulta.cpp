@@ -20,7 +20,7 @@ void mostrarConsulta(consulta a){
     Desplegado(a.Fech);
     print(a.motivoConsulta);
     printf("La cedula es:%ld",a.ci);
-    MostrarEvaluacion(a.eva);
+    mostrarEvaluacion(a.eva);
 }
 Fecha devolverFechConsulta(consulta a){
 return a.Fech;
