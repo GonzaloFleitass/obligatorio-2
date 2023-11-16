@@ -21,7 +21,15 @@ void mostrarConsulta(consulta a){
     printf("La cedula es:%ld",a.ci);
     MostrarEvaluacion(a.eva);
 }
-Fecha devolverFechConsulta(consulta a);
-void devolverMotivoConsulta(consulta b,string &a);
-long int devolverCiConsulta(consulta b);
-evaluacion devolverEvaluacionConsulta(consulta b);/
+Fecha devolverFechConsulta(consulta a){
+return a.fech;
+}
+void devolverMotivoConsulta(consulta b,string &a){
+return a.print;
+}
+long int devolverCiConsulta(consulta b){
+return b.ci;
+}
+evaluacion devolverEvaluacionConsulta(consulta b){
+    return b.eva;
+}
