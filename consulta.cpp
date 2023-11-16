@@ -6,9 +6,10 @@
 //
 
 #include "consulta.h"
+
 void cargarConsulta(consulta &a){
     printf("ingrese Fecha:");
-    CargaFech(a.fech);
+    CargaFech(a.Fech);
     printf("Ingrese Motivo de la consulta:");
     scan(a.motivoConsulta);
     printf("ingrese Ci:");
@@ -16,16 +17,16 @@ void cargarConsulta(consulta &a){
     cargarEvaluacion(a.eva);
 }
 void mostrarConsulta(consulta a){
-    Desplegar(a.fech);
+    Desplegado(a.Fech);
     print(a.motivoConsulta);
     printf("La cedula es:%ld",a.ci);
     MostrarEvaluacion(a.eva);
 }
 Fecha devolverFechConsulta(consulta a){
-return a.fech;
+return a.Fech;
 }
 void devolverMotivoConsulta(consulta b,string &a){
-return a.print;
+    strcop(b.motivoConsulta,a);
 }
 long int devolverCiConsulta(consulta b){
 return b.ci;
