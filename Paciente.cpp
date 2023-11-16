@@ -20,4 +20,5 @@ void cargarPaciente (Paciente &p){
     scanf("%ld", &p.telefono);
 }
 
-printf("hola mundo cruel");
+printf("hola mundo cruel jajja");
+
