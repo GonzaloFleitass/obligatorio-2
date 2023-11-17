@@ -20,4 +20,13 @@ void cargarPaciente (Paciente &p){
     scanf("%ld", &p.telefono);
 }
 
+void mostrarPaciente (Paciente p){
+    printf("La cedula es:%ld",p.cedula);
+    printf("El nombres es:");
+}
+long int darCedPac (Paciente p);// Devuelve la cedula del paciente
+void darNombre (Paciente p, string &s);//Devuelve el nombre de un paciente
+void darApellido (Paciente p, string &s);//Devuelve el apellido del paciente
+long int darTel (Paciente p);//Devuelve el telefono del paciente
+int darCantCons (Paciente p);// Devuelve la cantidad de consultas
 
