@@ -28,9 +28,23 @@ void mostrarPaciente (Paciente p){
     print(p.apellido);
     printf("Telefono:%ld",p.telefono);
 }
-long int darCedPac (Paciente p);// Devuelve la cedula del paciente
-void darNombre (Paciente p, string &s);//Devuelve el nombre de un paciente
-void darApellido (Paciente p, string &s);//Devuelve el apellido del paciente
-long int darTel (Paciente p);//Devuelve el telefono del paciente
-int darCantCons (Paciente p);// Devuelve la cantidad de consultas
+long int darCedPac (Paciente p){
+    return p.cedula;
+}
+void darNombre (Paciente p, string &s){
+    strcop(s, p.nombre);
+}
+
+
+void darApellido (Paciente p, string &s){
+    strcop(s, p.apellido);
+}
+
+long int darTel (Paciente p){
+    return p.telefono;
+}
+
+int darCantCons (Paciente p){
+    return p.cantConsultas;
+}
 
