@@ -7,6 +7,7 @@
 
 #include "menu.h"
 #include "submenuconsultas.h"
+#include "menualtasbajas.h"
 
 int main() {
    void mostarmenu1(int &opcion)
