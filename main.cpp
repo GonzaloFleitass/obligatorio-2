@@ -5,10 +5,9 @@
 //  Created by Gonzalo Fleitas on 15/11/23.
 //
 
-#include <iostream>
+#include "menu.h"
+#include "submenuconsultas.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n holaaaaaaaaaaa";
-    return 0;
+int main() {
+   void mostarmenu1(int &opcion)
 }
