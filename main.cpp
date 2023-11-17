@@ -12,6 +12,10 @@ int main() {
 mostarmenu1(int &opcion);
 switch(opcion){
    case 1:submenualtasybajas (int &opcionsub1);
+      swich(opcionsub1);
    break;
-   case 2:
+   case 2: submenuconsultas(int &opcionsub2);
+   switch(opcionsub2){
+}
+case 3:
 }
