@@ -14,6 +14,7 @@
 		3956BACF2B06EE1000258272 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3956BAC42B06EE0F00258272 /* String.cpp */; };
 		3956BAD02B06EE1000258272 /* boolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3956BAC72B06EE0F00258272 /* boolean.cpp */; };
 		3956BAD12B06EE1000258272 /* Paciente.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3956BAC92B06EE1000258272 /* Paciente.cpp */; };
+		3956BAD42B08183B00258272 /* ListaConsultas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3956BAD32B08183B00258272 /* ListaConsultas.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,8 @@
 		3956BAC82B06EE0F00258272 /* consulta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = consulta.h; path = ../consulta.h; sourceTree = "<group>"; };
 		3956BAC92B06EE1000258272 /* Paciente.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Paciente.cpp; path = ../Paciente.cpp; sourceTree = "<group>"; };
 		3956BACA2B06EE1000258272 /* Paciente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Paciente.h; path = ../Paciente.h; sourceTree = "<group>"; };
+		3956BAD22B08173A00258272 /* ListaConsultas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListaConsultas.h; sourceTree = "<group>"; };
+		3956BAD32B08183B00258272 /* ListaConsultas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ListaConsultas.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				3956BAC72B06EE0F00258272 /* boolean.cpp */,
 				3956BABD2B06EE0F00258272 /* boolean.h */,
 				3956BAC12B06EE0F00258272 /* consulta.cpp */,
+				3956BAD22B08173A00258272 /* ListaConsultas.h */,
+				3956BAD32B08183B00258272 /* ListaConsultas.cpp */,
 				3956BAC82B06EE0F00258272 /* consulta.h */,
 				3956BAC22B06EE0F00258272 /* Evaluacion.cpp */,
 				3956BABF2B06EE0F00258272 /* Evaluacion.h */,
@@ -147,6 +152,7 @@
 				3956BACE2B06EE1000258272 /* Fecha.cpp in Sources */,
 				3956BACD2B06EE1000258272 /* Evaluacion.cpp in Sources */,
 				3956BAD02B06EE1000258272 /* boolean.cpp in Sources */,
+				3956BAD42B08183B00258272 /* ListaConsultas.cpp in Sources */,
 				3956BACF2B06EE1000258272 /* String.cpp in Sources */,
 				3956BAD12B06EE1000258272 /* Paciente.cpp in Sources */,
 				3956BACC2B06EE1000258272 /* consulta.cpp in Sources */,
