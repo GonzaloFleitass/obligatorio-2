@@ -22,3 +22,4 @@ void cargarPaciente (Paciente &p){
 
 printf("hola mundo cruel agunta ahora si jajja");
 printf("hola bro");
+printf(hola bro pero ahora si);
