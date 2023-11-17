@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1700264630 source:c:\users\matia\onedrive\escritorio\obligatori\test\main.cpp
+	<stdio.h>
+	"arbolpacientes.h"
+
+1700263871 source:c:\users\matia\onedrive\escritorio\obligatori\test\listaconsulta.cpp
+	"consulta.h"
+
+1700265075 c:\users\matia\onedrive\escritorio\obligatori\test\consulta.h
+	<stdio.h>
+	"fecha.h"
+	"string.h"
+	"evaluacion.h"
+
+1700264847 c:\users\matia\onedrive\escritorio\obligatori\test\fecha.h
+	"boolean.h"
+
+1700264847 c:\users\matia\onedrive\escritorio\obligatori\test\boolean.h
+
+1700265398 c:\users\matia\onedrive\escritorio\obligatori\test\string.h
+	"boolean.h"
+
+1700265074 c:\users\matia\onedrive\escritorio\obligatori\test\evaluacion.h
+	<stdio.h>
+
+1700263955 source:c:\users\matia\onedrive\escritorio\obligatori\test\menu.cpp
+	"menu.h"
+
+1700265075 c:\users\matia\onedrive\escritorio\obligatori\test\menu.h
+	<stdio.h>
+
+1700264847 source:c:\users\matia\onedrive\escritorio\obligatori\test\boolean.cpp
+	<stdio.h>
+	"boolean.h"
+
+1700260251 source:c:\users\matia\onedrive\escritorio\obligatori\test\evaluacion.cpp
+	"evaluacion.h"
+
+1700265271 source:c:\users\matia\onedrive\escritorio\obligatori\test\paciente.cpp
+	<stdio.h>
+	"paciente.h"
+
+1700265075 c:\users\matia\onedrive\escritorio\obligatori\test\paciente.h
+	"string.h"
+
+1700265398 source:c:\users\matia\onedrive\escritorio\obligatori\test\string.cpp
+	<stdio.h>
+	"string.h"
+
+1700265113 c:\users\matia\onedrive\escritorio\obligatori\test\arbolpacientes.h
+	"paciente.h"
+	<stdio.h>
+
+1700265113 source:c:\users\matia\onedrive\escritorio\obligatori\test\arbolpacientes.cpp
+	"arbolpacientes.h"
+
+1700265131 source:c:\users\matia\onedrive\escritorio\obligatori\test\fecha.cpp
+	<stdio.h>
+	"Fecha.h"
+
