@@ -6,11 +6,12 @@
 //
 
 #include "menu.h"
-#include "submenuconsultas.h"
-#include "menualtasbajas.h"
+
 
 int main() {  
 mostarmenu1(int &opcion);
 switch(opcion){
-   
+   case 1:submenualtasybajas (int &opcionsub1);
+   break;
+   case 2:
 }
