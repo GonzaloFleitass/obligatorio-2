@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3996EFC62B0852B80096FC96 /* consulta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3996EFC52B0852B80096FC96 /* consulta.cpp */; };
 		C4D0E7B32B083ED70088DA53 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D0E7B22B083ED70088DA53 /* main.cpp */; };
 		C4D0E7CA2B083F790088DA53 /* string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D0E7BB2B083F790088DA53 /* string.cpp */; };
 		C4D0E7CB2B083F790088DA53 /* paciente.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D0E7BE2B083F790088DA53 /* paciente.cpp */; };
@@ -31,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3996EFC52B0852B80096FC96 /* consulta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = consulta.cpp; sourceTree = "<group>"; };
 		C4D0E7AF2B083ED70088DA53 /* obligatorio mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "obligatorio mac"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D0E7B22B083ED70088DA53 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C4D0E7B92B083F790088DA53 /* evaluacion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluacion.h; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				C4D0E7C62B083F790088DA53 /* arbolpacientes.h */,
 				C4D0E7C92B083F790088DA53 /* boolean.cpp */,
 				C4D0E7C52B083F790088DA53 /* boolean.h */,
+				3996EFC52B0852B80096FC96 /* consulta.cpp */,
 				C4D0E7C02B083F790088DA53 /* consulta.h */,
 				C4D0E7C12B083F790088DA53 /* evaluacion.cpp */,
 				C4D0E7B92B083F790088DA53 /* evaluacion.h */,
@@ -163,6 +166,7 @@
 			files = (
 				C4D0E7CD2B083F790088DA53 /* evaluacion.cpp in Sources */,
 				C4D0E7D12B083F790088DA53 /* boolean.cpp in Sources */,
+				3996EFC62B0852B80096FC96 /* consulta.cpp in Sources */,
 				C4D0E7CB2B083F790088DA53 /* paciente.cpp in Sources */,
 				C4D0E7CA2B083F790088DA53 /* string.cpp in Sources */,
 				C4D0E7CE2B083F790088DA53 /* fecha.cpp in Sources */,
