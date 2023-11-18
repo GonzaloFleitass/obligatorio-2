@@ -8,7 +8,7 @@ int main() {
     ArboldePacientes a;
     Paciente p;
     Crear(a);
-mostarmenu1( opcion);
+    mostarmenu1( opcion);
     switch(opcion){
         case 1:submenualtasybajas (opcionsub1);
             switch(opcionsub1){
@@ -25,18 +25,19 @@ mostarmenu1( opcion);
                 case 4:
                 case 5:
             }
+    
+    break;
+case 2: submenuconsultas(opcionsub2);
+    switch(opcionsub2){
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+            
     }
-   break;
-   case 2: submenuconsultas(opcionsub2);
-   switch(opcionsub2){
-       case 1:
-       case 2:
-       case 3:
-       case 4:
-       case 5:
-       case 6:
-       case 7:
-           
-}
 case 3:
+}
 }

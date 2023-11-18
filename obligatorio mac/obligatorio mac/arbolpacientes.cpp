@@ -6,38 +6,38 @@ void Crear (ArboldePacientes &a)
 }
 
 
-void Insert (ArboldePacientes &a, long int e)
+void Insert (ArboldePacientes &a, Paciente p)
 {
     if (a == NULL)
     {
         a = new nodo;
-        a -> cedula = e;
+        a -> p = p;
         a -> hizq = NULL;
         a -> hder = NULL;
     }
     else
     {
-        if (e < a->cedula)
-            Insert (a -> hizq, e);
+        if (darCedPac(p) < darCedPac(a->p))
+            Insert (a -> hizq, p);
         else
-            Insert (a -> hder, e);
+            Insert (a -> hder, p);
     }
 }
 
-boolean Pertenece (ArboldePacientes a, long int e)
+boolean Pertenece (ArboldePacientes a, long int ci)
 {
     if (a == NULL)
         return FALSE;
     else
     {
-       if (a -> cedula == e)
+       if (darCedPac(a -> p) == ci )
             return TRUE;
         else
         {
-            if (e < a -> cedula)
-                return Pertenece (a -> hizq, e);
+            if (ci < darCedPac(a->p))
+                return Pertenece (a -> hizq, ci);
             else
-                return Pertenece (a -> hder, e);
+                return Pertenece (a -> hder, ci);
         }
     }
 }

@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 typedef struct nodoA {
-                    long int cedula;
+                    Paciente p;
                     nodoA * hizq;
                     nodoA * hder;
                     } nodo;
@@ -13,11 +13,10 @@ typedef nodo * ArboldePacientes;
 
 void Crear (ArboldePacientes &a);
 
-void Insert (ArboldePacientes &a, long int e);
+void Insert (ArboldePacientes &a, Paciente p);
 
-boolean Pertenece (ArboldePacientes a, long int e);
+boolean Pertenece (ArboldePacientes a, long int ci);
 
 boolean EsVacio (ArboldePacientes a);
-
 
 #endif // ARBOLPACIENTES_H_INCLUDED
