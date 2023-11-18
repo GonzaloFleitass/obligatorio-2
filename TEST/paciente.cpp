@@ -11,6 +11,8 @@ void cargarPaciente (Paciente &p){
     scan(p.apellido);
     printf("Ingrese el telefono: ");
     scanf("%ld", &p.telefono);
+    printf("Ingrese cantidad de consultas: ");
+    scanf("%d", &p.cantConsultas);
 }
 
 void mostrarPaciente (Paciente p){
@@ -20,6 +22,7 @@ void mostrarPaciente (Paciente p){
     printf("Apellido:");
     print(p.apellido);
     printf("Telefono:%ld",p.telefono);
+    printf("Cantidad de consultas:%d", p.cantConsultas);
 }
 long int darCedPac (Paciente p){
     return p.cedula;
