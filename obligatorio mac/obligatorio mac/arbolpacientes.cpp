@@ -46,3 +46,13 @@ boolean EsVacio (ArboldePacientes a)
 {
     return (boolean) (a == NULL);
 }
+
+void orden(ArboldePacientes a){
+    if(a!=NULL){
+        orden(a->hizq);
+        mostrarPaciente(a->p);
+        orden(a->hder);
+        
+    }
+}
+    
