@@ -10,7 +10,7 @@ int main() {
     ArboldePacientes a;
     Paciente p;
     consulta c;
-    Fecha fech;
+    Fecha fech,fech2;
     Lista consultas;
     Crear(a);
     do{
@@ -49,10 +49,15 @@ int main() {
                                 
                             case 1: printf("ingrese ci");
                                 scanf("%ld",&ci);
-                                if(Pertenece(a, ci)==FALSE)
-                                    cargarConsulta(c);
-                                else
-                                    printf("error");
+                                if(Pertenece(a, ci)==TRUE){
+                                    printf("ingrese Fecha");
+                                    CargaFech(fech2);
+                                } if(fechavalida(fech2)==TRUE){
+                                    if()
+                                    cargarConsulta(c,ci);
+                                }else{
+                                    printf("El paciente no esta registrado");
+                                }
                                 
                             case 2:
                             case 3:printf("ingrese Fecha");

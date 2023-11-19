@@ -7,13 +7,12 @@
 
 #include "consulta.h"
 
-void cargarConsulta(consulta &a){
+void cargarConsulta(consulta &a,long int ci){
     printf("ingrese Fecha:\n");
     CargaFech(a.Fech);
     printf("Ingrese Motivo de la consulta:");
     scan(a.motivoConsulta);
-    printf("ingrese Ci:");
-    scanf("%ld",&a.ci);
+    a.ci=ci;
     cargarEvaluacion(a.eva);
 }
 void mostrarConsulta(consulta a){

@@ -14,7 +14,7 @@ typedef struct {
 }consulta;
 
 
-void cargarConsulta(consulta &a);/*carga todos los datos de la consulta*/
+void cargarConsulta(consulta &a,long int ci);/*carga todos los datos de la consulta*/
 void mostrarConsulta(consulta a); /*muestra todos los datos de consulta*/
 Fecha devolverFechConsulta(consulta b);/*devuelve el valor de fecha adentro de consulta*/
 void devolverMotivoConsulta(consulta b,string &a);/*devuelve el valor de motivo adentro de consulta*/
