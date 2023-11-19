@@ -53,7 +53,7 @@ int main() {
                                     printf("ingrese Fecha");
                                     CargaFech(fech2);
                                 } if(fechavalida(fech2)==TRUE){
-                                    if()
+                                    if(ci>10)
                                     cargarConsulta(c,ci);
                                 }else{
                                     printf("El paciente no esta registrado");
