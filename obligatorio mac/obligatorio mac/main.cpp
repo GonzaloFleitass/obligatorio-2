@@ -4,7 +4,7 @@
 
 int main() {
     int opcion,opcionsub1,opcionsub2;
-    long int ci;
+    long int ci=0;
     ArboldePacientes a;
     Paciente p;
     Crear(a);
@@ -12,11 +12,10 @@ int main() {
     switch(opcion){
         case 1:submenualtasybajas (opcionsub1);
             switch(opcionsub1){
-                case 1:printf("Ingrese CI:");
-                    scanf("%ld", &ci);
-                    if(Pertenece(a, ci)){
+                case 1:cargarCedula (p,ci);
+                    if(Pertenece(a, darCedPac(p)))
                         printf("El paciente ya existe");
-                    } else{
+                    else{
                         cargarPaciente(p);
                         Insert(a, p);
                     }

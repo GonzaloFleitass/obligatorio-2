@@ -3,9 +3,8 @@
 
 
 void cargarPaciente (Paciente &p){
-    printf("Ingrese la cedula : ");
-    scanf("%ld", &p.cedula);
     printf("Ingrese el nombre: ");
+    fflush(stdin);
     scan(p.nombre);
     printf("Ingrese el apellido: ");
     scan(p.apellido);
@@ -21,6 +20,7 @@ void mostrarPaciente (Paciente p){
     print(p.apellido);
     printf("Telefono:%ld",p.telefono);
 }
+
 long int darCedPac (Paciente p){
     return p.cedula;
 }
@@ -39,4 +39,9 @@ long int darTel (Paciente p){
 
 int darCantCons (Paciente p){
     return p.cantConsultas;
+}
+
+void cargarCedula (Paciente &p, long int c){
+    printf("Ingrese la cedula: ");
+    scanf("%ld", &p.cedula);
 }
