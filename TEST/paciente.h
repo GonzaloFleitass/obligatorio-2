@@ -18,6 +18,7 @@ void darNombre (Paciente p, string &s);//Devuelve el nombre de un paciente
 void darApellido (Paciente p, string &s);//Devuelve el apellido del paciente
 long int darTel (Paciente p);//Devuelve el telefono del paciente
 int darCantCons (Paciente p);// Devuelve la cantidad de consultas
+void cargarCedula (Paciente &p, long int c);//Cargar cedula del paciente
 
 
 
