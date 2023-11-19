@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include "menu.h"
 #include "arbolpacientes.h"
+#include "listaconsulta.h"
 
 int main() {
     int opcion,opcionsub1,opcionsub2;
     long int ci=0;
     ArboldePacientes a;
     Paciente p;
+    consulta c;
     Crear(a);
     mostarmenu1( opcion);
     switch(opcion){
@@ -32,7 +34,8 @@ int main() {
             break;
         case 2: submenuconsultas(opcionsub2);
             switch(opcionsub2){
-                case 1:
+                case 1: if(Pertenece(a, darCedPac(p)))
+                    cargarConsulta(c);
                     
                 case 2:
                 case 3:
