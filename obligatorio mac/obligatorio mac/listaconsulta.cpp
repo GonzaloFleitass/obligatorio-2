@@ -17,3 +17,12 @@ void DesplegarLista(Lista l){
         l= l->sig;
     }
 }
+
+void DesplegarListaFecha(Lista l,Fecha a){
+    while(l!=NULL){
+        if(comparaFecha(devolverFechConsulta(l->con),a)==TRUE){
+            mostrarConsulta(l->con);
+            l=l->sig;
+        }
+    }
+}

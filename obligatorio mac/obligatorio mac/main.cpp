@@ -10,7 +10,8 @@ int main() {
     ArboldePacientes a;
     Paciente p;
     consulta c;
-    
+    Fecha fech;
+    Lista consultas = null;
     Crear(a);
     do{
         mostarmenu1( opcion);
@@ -54,7 +55,9 @@ int main() {
                                     printf("error");
                                 
                             case 2:
-                            case 3:
+                            case 3:printf("ingrese Fecha");
+                                CargaFech(fech);
+                                DesplegarListaFecha(consultas,fech);
                             case 4:
                             case 5:
                             case 6:

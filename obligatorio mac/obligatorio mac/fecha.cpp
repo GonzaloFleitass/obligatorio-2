@@ -70,3 +70,15 @@ case 2: if (fec.anio % 4 == 0)
  }
     return valida;
 }
+
+boolean comparaFecha(Fecha a, Fecha b){
+    boolean igual=FALSE;
+    if(a.dia==b.dia){
+        if(a.mes==b.mes){
+            if(a.anio==b.anio){
+                igual=TRUE;
+            }
+        }
+    }
+    return igual;
+}
