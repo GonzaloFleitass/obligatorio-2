@@ -3,10 +3,10 @@
 #include "boolean.h"
 
 
-typedef struct{
-    int dia;
-    int mes;
-    int anio;
+typedef struct fecha{
+    int dia=0;
+    int mes=0;
+    int anio=0;
 }Fecha;
 
 
@@ -17,5 +17,7 @@ int darmes (Fecha fec);// Devuelve mes
 int daranio (Fecha fec);// Devuelve año
 boolean fechavalida (Fecha fec);//Valida fecha valida
 boolean comparaFecha(Fecha a, Fecha b);//compara dos fecha si son iguales o no
+boolean comparaFechaPosterior(Fecha a, Fecha b);
+
 
 #endif // FECHA_H_INCLUDED

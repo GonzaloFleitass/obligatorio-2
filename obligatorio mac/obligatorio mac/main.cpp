@@ -12,7 +12,9 @@ int main() {
     consulta c;
     Fecha fech,fech2;
     Lista consultas;
+    Crear(consultas);
     Crear(a);
+  
     do{
         mostarmenu1( opcion);
         
@@ -47,20 +49,25 @@ int main() {
                     case 2: submenuconsultas(opcionsub2);
                         switch(opcionsub2){
                                 
-                            case 1: printf("ingrese ci");
-                                scanf("%ld",&ci);
-                                if(Pertenece(a, ci)==TRUE){
-                                    printf("ingrese Fecha");
+                            case 1: printf("Ingrese CI: ");
+                                    scanf("%ld",&ci);
+                                if(Pertenece(a, ci)==TRUE)
+                                    printf("Ingrese Fecha:\n ");
                                     CargaFech(fech2);
-                                } if(fechavalida(fech2)==TRUE){
-                                    if(ci>10)
-                                    cargarConsulta(c,ci);
-                                }else{
-                                    printf("El paciente no esta registrado");
+                                if(fechavalida(fech2)==TRUE){
+                                    if(vacia(consultas)==TRUE){
+                                        cargarConsulta(c,ci,fech2);
+                                    } else{
+                                        if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
+                                            cargarConsulta(c,ci,fech2);
+                                        }else{
+                                            printf("El paciente no esta registrado");
+                                        }
+                                    }
                                 }
                                 
                             case 2:
-                            case 3:printf("ingrese Fecha");
+                            case 3:printf("ingrese Fecha: ");
                                 CargaFech(fech);
                                 DesplegarListaFecha(consultas,fech);
                             case 4:

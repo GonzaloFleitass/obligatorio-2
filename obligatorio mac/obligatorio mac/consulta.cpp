@@ -7,13 +7,13 @@
 
 #include "consulta.h"
 
-void cargarConsulta(consulta &a,long int ci){
-    printf("ingrese Fecha:\n");
-    CargaFech(a.Fech);
+void cargarConsulta(consulta &a,long int ci,Fecha b){
+
     printf("Ingrese Motivo de la consulta:");
     scan(a.motivoConsulta);
     a.ci=ci;
     cargarEvaluacion(a.eva);
+    a.Fech=b;
 }
 void mostrarConsulta(consulta a){
     printf("Fecha: ");
@@ -27,6 +27,7 @@ void mostrarConsulta(consulta a){
 Fecha devolverFechConsulta(consulta b){
 return b.Fech;
 }
+
 void devolverMotivoConsulta(consulta b,string &a){
     strcop(b.motivoConsulta,a);
 }
@@ -36,3 +37,5 @@ return b.ci;
 evaluacion devolverEvaluacionConsulta(consulta b){
     return b.eva;
 }
+
+
