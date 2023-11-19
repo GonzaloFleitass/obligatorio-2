@@ -11,7 +11,7 @@ int main() {
     Paciente p;
     consulta c;
     Fecha fech;
-    Lista consultas = null;
+    Lista consultas;
     Crear(a);
     do{
         mostarmenu1( opcion);
