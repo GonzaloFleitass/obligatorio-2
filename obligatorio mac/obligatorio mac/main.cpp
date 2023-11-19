@@ -42,7 +42,7 @@ int main() {
                         
                     case 1: printf("ingrese ci");
                         scanf("%ld",&ci);
-                        if(Pertenece(a, ci))
+                        if(Pertenece(a, ci)==FALSE)
                         cargarConsulta(c);
                         else
                             printf("error");
