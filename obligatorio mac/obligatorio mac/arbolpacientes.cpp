@@ -64,4 +64,66 @@ void sinConsultas(ArboldePacientes a){
         }
     }
 }
+
+/* Precondicion: a no vacio */
+Paciente minimo (ArboldePacientes a)
+{
+	if (a->hizq == NULL)
+		return (a->p);
+	else
+		return minimo (a->hizq);
+}
+
+
+/* borra el valor minimo del arbol */
+/* Precondición : el arbol a NO está vacio */
+void borrarminimo (ArboldePacientes &a)
+{
+	ArboldePacientes aux;
+	if (a->hizq == NULL)
+	{
+		aux = a->hder;
+		delete a;
+		a = aux;
+	}
+	else
+		borrarminimo (a->hizq);
+}
+
+/* borra un valor cualquiera del arbol */
+/* Precondición : paciente está en el arbol a */
+void borrar (ArboldePacientes &a, Paciente p)
+{
+	ArboldePacientes aux;
+	if (darCedPac(p) == darCedPac(a->p))
+	{
+		if (a->hder == NULL)
+		{
+			aux = a -> hizq;	
+			delete a;
+			a = aux;
+		}
+		else
+		{
+			if (a->hizq == NULL)
+			{
+				aux = a->hder;
+				delete a;
+				a = aux;
+			}
+			else
+			{
+				a->p = minimo (a->hder);
+				borrarminimo (a->hder);
+			}
+		}
+	}
+	else
+	{
+		if (darCedPac(p) < darCedPac(a->p))
+			borrar (a->hizq, p);
+		else
+			borrar (a->hder, p);
+	}
+}
     
