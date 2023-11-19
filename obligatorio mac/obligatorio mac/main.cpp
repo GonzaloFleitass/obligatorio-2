@@ -7,9 +7,10 @@ int main() {
     int opcion,opcionsub1,opcionsub2;
     long int ci=0;
     boolean termine=FALSE;
-    ArboldePacientes a;
+    ArboldePacientes a,b;
     Paciente p;
     consulta c;
+    
     Crear(a);
     do{
     mostarmenu1( opcion);
@@ -21,14 +22,16 @@ int main() {
                         if(Pertenece(a, darCedPac(p)))
                             printf("El paciente ya existe");
                         else{
+                           
                             cargarPaciente(p);
                             Insert(a, p);
                         }
                     case 2:
                         break;
-                    case 3:
+                    case 3:orden(a);
                         break;
-                    case 4:
+                    case 4:ordensinConsultas (a);
+                                     
                         break;
                     case 5:
                         break;

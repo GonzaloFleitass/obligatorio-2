@@ -5,20 +5,22 @@
 void cargarPaciente (Paciente &p){
     printf("Ingrese el nombre: ");
     fflush(stdin);
+    strcrear(p.nombre);
     scan(p.nombre);
     printf("Ingrese el apellido: ");
+    strcrear(p.apellido);
     scan(p.apellido);
     printf("Ingrese el telefono: ");
     scanf("%ld", &p.telefono);
 }
 
 void mostrarPaciente (Paciente p){
-    printf("Cedula:%ld",p.cedula);
+    printf("Cedula:%ld \n",p.cedula);
     printf("Nombre:");
     print(p.nombre);
-    printf("Apellido:");
+    printf("\nApellido:");
     print(p.apellido);
-    printf("Telefono:%ld",p.telefono);
+    printf("Telefono:%ld\n",p.telefono);
 }
 
 long int darCedPac (Paciente p){

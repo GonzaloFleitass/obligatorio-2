@@ -20,5 +20,6 @@ boolean Pertenece (ArboldePacientes a, long int ci);
 boolean EsVacio (ArboldePacientes a);
 
 void orden(ArboldePacientes a);
+void ordensinConsultas(ArboldePacientes a);
 
 #endif // ARBOLPACIENTES_H_INCLUDED
