@@ -48,7 +48,7 @@ void print (string s)
     }
 }
 void scan (string &s) {
-
+    
     int i=0;
     char c;
     scanf ("%c",&c);

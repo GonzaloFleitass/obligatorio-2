@@ -21,5 +21,4 @@ int darCantCons (Paciente p);// Devuelve la cantidad de consultas
 void cargarCedula (Paciente &p, long int c);//Cargar cedula del paciente
 
 
-
 #endif // PACIENTE_H_INCLUDED
