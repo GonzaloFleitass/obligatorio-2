@@ -12,4 +12,5 @@ typedef Nodo * Lista;
 void Crear (Lista &l);// Crea nueva lista
 void InsFrontConculta (Lista &l, consulta c);// Inserta una consulta en el frente de la lista
 void DesplegarLista (Lista l);//Desplegar lista
+void DesplegarListaFecha(Lista l,Fecha a);//despleiga lista con el filtro de buscar por fecha
 #endif // LISTACONSULTA_H_INCLUDED

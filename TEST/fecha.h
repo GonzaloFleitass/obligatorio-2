@@ -16,6 +16,6 @@ int dardia (Fecha fec);// Devuelve el dia
 int darmes (Fecha fec);// Devuelve mes
 int daranio (Fecha fec);// Devuelve año
 boolean fechavalida (Fecha fec);//Valida fecha valida
-
+boolean comparaFecha(Fecha a, Fecha b);//compara dos fecha si son iguales o no
 
 #endif // FECHA_H_INCLUDED

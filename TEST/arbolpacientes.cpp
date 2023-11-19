@@ -126,3 +126,4 @@ void borrar (ArboldePacientes &a, Paciente p)
 			borrar (a->hder, p);
 	}
 }
+    

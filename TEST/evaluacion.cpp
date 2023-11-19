@@ -2,6 +2,7 @@
 
 void cargarEvaluacion(evaluacion &a){
     int b;
+    printf("Opcion 1-En Tratamiento\n 2-Necesita Protesis\n 3-Saludable");
     scanf("%d",&b);
     switch(b){
         case 1:a=EN_TRATAMIENTO;
