@@ -13,8 +13,8 @@ int main() {
     
     Crear(a);
     do{
-    mostarmenu1( opcion);
-    
+        mostarmenu1( opcion);
+        
         switch(opcion){
             case 1:submenualtasybajas (opcionsub1);
                 switch(opcionsub1){
@@ -32,37 +32,39 @@ int main() {
                             borrar(a,p);
                         }else{
                             printf("El paciente no existe");
-                        break;
-                    case 3:orden(a);
-                        break;
-                    case 4:sinConsultas (a);
-                        break;
-                    case 5:
+                            break;
+                        case 3:orden(a);
+                            break;
+                        case 4:sinConsultas (a);
+                            break;
+                        case 5:
+                            break;
+                        }
+                        
                         break;
                 }
-                
-                break;
-            case 2: submenuconsultas(opcionsub2);
-                switch(opcionsub2){
-                        
-                    case 1: printf("ingrese ci");
-                        scanf("%ld",&ci);
-                        if(Pertenece(a, ci)==FALSE)
-                        cargarConsulta(c);
-                        else
-                            printf("error");
-                        
-                    case 2:
-                    case 3:
-                    case 4:
-                    case 5:
-                    case 6:
-                    case 7:
+                    case 2: submenuconsultas(opcionsub2);
+                        switch(opcionsub2){
+                                
+                            case 1: printf("ingrese ci");
+                                scanf("%ld",&ci);
+                                if(Pertenece(a, ci)==FALSE)
+                                    cargarConsulta(c);
+                                else
+                                    printf("error");
+                                
+                            case 2:
+                            case 3:
+                            case 4:
+                            case 5:
+                            case 6:
+                            case 7:
+                                break;
+                                
+                        }
+                    case 3: termine=TRUE;
                         break;
-                        
                 }
-            case 3: termine=TRUE;
-                break;
-        }
-    }while(termine!=TRUE);
-}
+        }while(termine!=TRUE);
+    }
+
