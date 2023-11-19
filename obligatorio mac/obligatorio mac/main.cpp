@@ -26,7 +26,12 @@ int main() {
                             cargarPaciente(p);
                             Insert(a, p);
                         }
-                    case 2:
+                    case 2:printf("Ingrese CI del paciente que desea eliminar:");
+                        scanf("%ld",&ci);
+                        if(Pertenece(a, ci)){
+                            borrar(a,p);
+                        }else{
+                            printf("El paciente no existe");
                         break;
                     case 3:orden(a);
                         break;
