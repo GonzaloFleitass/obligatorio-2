@@ -30,7 +30,7 @@ int main() {
                         break;
                     case 3:orden(a);
                         break;
-                    case 4:ordensinConsultas (a);
+                    case 4:sinConsultas (a);
                         break;
                     case 5:
                         break;

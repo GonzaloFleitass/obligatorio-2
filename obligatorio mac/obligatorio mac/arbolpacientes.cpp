@@ -56,12 +56,10 @@ void orden(ArboldePacientes a){
     }
 }
 
-void ordensinConsultas(ArboldePacientes a){
+void sinConsultas(ArboldePacientes a){
     if(a!=NULL){
         if(darCantCons( a->p)==0){
-            orden(a->hizq);
             mostrarPaciente(a->p);
-            orden(a->hder);
             
         }
     }

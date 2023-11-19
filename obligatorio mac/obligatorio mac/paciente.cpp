@@ -12,6 +12,7 @@ void cargarPaciente (Paciente &p){
     scan(p.apellido);
     printf("Ingrese el telefono: ");
     scanf("%ld", &p.telefono);
+    p.cantConsultas=0;
 }
 
 void mostrarPaciente (Paciente p){
