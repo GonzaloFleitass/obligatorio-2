@@ -17,13 +17,16 @@ void cargarConsulta(consulta &a){
     cargarEvaluacion(a.eva);
 }
 void mostrarConsulta(consulta a){
+    printf("Fecha: ");
     Desplegado(a.Fech);
+    printf("Motivo de Consulta: ");
     print(a.motivoConsulta);
-    printf("La cedula es:%ld",a.ci);
+    printf("Cedula Id: %ld",a.ci);
+    printf("Evaludacion: ");
     mostrarEvaluacion(a.eva);
 }
-Fecha devolverFechConsulta(consulta a){
-return a.Fech;
+Fecha devolverFechConsulta(consulta b){
+return b.Fech;
 }
 void devolverMotivoConsulta(consulta b,string &a){
     strcop(b.motivoConsulta,a);

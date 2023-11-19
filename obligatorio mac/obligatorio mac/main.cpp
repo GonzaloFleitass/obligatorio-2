@@ -33,6 +33,7 @@ int main() {
         case 2: submenuconsultas(opcionsub2);
             switch(opcionsub2){
                 case 1:
+                    
                 case 2:
                 case 3:
                 case 4:
