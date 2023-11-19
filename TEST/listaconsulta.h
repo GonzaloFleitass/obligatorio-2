@@ -8,4 +8,8 @@ typedef struct Nodol{
     } Nodo;
 typedef Nodo * Lista;
 
+
+void Crear (Lista &l);// Crea nueva lista
+void InsFrontConculta (Lista &l, consulta c);// Inserta una consulta en el frente de la lista
+void DesplegarLista (Lista l);//Desplegar lista
 #endif // LISTACONSULTA_H_INCLUDED
