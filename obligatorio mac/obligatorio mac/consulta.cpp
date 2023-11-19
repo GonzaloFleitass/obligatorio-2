@@ -13,6 +13,7 @@ void cargarConsulta(consulta &a){
     printf("Ingrese Motivo de la consulta:");
     scan(a.motivoConsulta);
     printf("ingrese Ci:");
+    fflush(stdin);
     scanf("%ld",&a.ci);
     cargarEvaluacion(a.eva);
 }

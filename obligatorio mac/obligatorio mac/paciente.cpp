@@ -20,7 +20,7 @@ void mostrarPaciente (Paciente p){
     print(p.nombre);
     printf("\nApellido:");
     print(p.apellido);
-    printf("Telefono:%ld\n",p.telefono);
+    printf("\nTelefono:%ld\n",p.telefono);
 }
 
 long int darCedPac (Paciente p){
@@ -43,7 +43,4 @@ int darCantCons (Paciente p){
     return p.cantConsultas;
 }
 
-void cargarCedula (Paciente &p, long int c){
-    printf("Ingrese la cedula: ");
-    scanf("%ld", &p.cedula);
-}
+

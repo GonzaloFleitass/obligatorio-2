@@ -3,11 +3,14 @@
 
 
 void CargaFech (Fecha &fec){
-    printf("Ingrese el dia\n");
+    printf("Ingrese el dia:");
+    fflush(stdin);
     scanf("%d",&fec.dia);
-    printf("Ingrese el mes\n");
+    printf("\nIngrese el mes:");
+    fflush(stdin);
     scanf("%d",&fec.mes);
-    printf("Ingrese el anio\n");
+    printf("\nIngrese el anio:");
+    fflush(stdin);
     scanf("%d",&fec.anio);
 }
 

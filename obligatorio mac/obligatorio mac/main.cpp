@@ -7,7 +7,7 @@ int main() {
     int opcion,opcionsub1,opcionsub2;
     long int ci=0;
     boolean termine=FALSE;
-    ArboldePacientes a,b;
+    ArboldePacientes a;
     Paciente p;
     consulta c;
     
@@ -18,11 +18,11 @@ int main() {
         switch(opcion){
             case 1:submenualtasybajas (opcionsub1);
                 switch(opcionsub1){
-                    case 1:cargarCedula (p,ci);
-                        if(Pertenece(a, darCedPac(p)))
+                    case 1:printf("ingrese CI:");
+                        scanf("%ld",&ci);
+                        if(Pertenece(a, ci)){
                             printf("El paciente ya existe");
-                        else{
-                           
+                        }else{
                             cargarPaciente(p);
                             Insert(a, p);
                         }
@@ -31,7 +31,6 @@ int main() {
                     case 3:orden(a);
                         break;
                     case 4:ordensinConsultas (a);
-                                     
                         break;
                     case 5:
                         break;
@@ -40,8 +39,13 @@ int main() {
                 break;
             case 2: submenuconsultas(opcionsub2);
                 switch(opcionsub2){
-                    case 1: if(Pertenece(a, darCedPac(p)))
+                        
+                    case 1: printf("ingrese ci");
+                        scanf("%ld",&ci);
+                        if(Pertenece(a, ci))
                         cargarConsulta(c);
+                        else
+                            printf("error");
                         
                     case 2:
                     case 3:
