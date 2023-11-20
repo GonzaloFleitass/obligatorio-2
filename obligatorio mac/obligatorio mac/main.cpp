@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "menu.h"
-#include "arboldePacientes.h"
+#include "arbolpacientes.h"
 #include "listaconsulta.h"
 
 int main() {
@@ -74,10 +74,10 @@ int main() {
                                     CargaFech(fech2);
                                 if(fechavalida(fech2)==TRUE){
                                     if(vacia(consultas)==TRUE){
-                                        cargarConsulta(c);
+                                        cargarConsulta(c,ci,fech);
                                     } else{
                                         if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
-                                            cargarConsulta(c);
+                                            cargarConsulta(c,ci,fech);
                                         }else{
                                             printf("El paciente no esta registrado");
                                         }

@@ -16,12 +16,12 @@ void cargarPaciente (Paciente &p){
 }
 
 void mostrarPaciente (Paciente p){
-    printf("Cedula:%ld \n",p.cedula);
-    printf("Nombre:");
+    printf("Cedula:%ld ",p.cedula);
+    printf("  Nombre:");
     print(p.nombre);
-    printf("\nApellido:");
+    printf("  Apellido:");
     print(p.apellido);
-    printf("\nTelefono:%ld\n",p.telefono);
+    printf("  Telefono:%ld\n",p.telefono);
 }
 
 long int darCedPac (Paciente p){
