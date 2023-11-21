@@ -50,7 +50,7 @@ int main() {
                             if(EsVacio(a))
                                 printf("No existen pacientes\n");
                             else
-                                orden(a);
+                                printOrden(a);
                            
                             break;
                         case 4:sinConsultas (a);
@@ -76,6 +76,8 @@ int main() {
                                     if(vacia(consultas)==TRUE){
                                         cargarConsulta(c,ci2,fech);
                                         InsFrontConsulta(consultas,c);
+                                        
+                                        //buscar paciente con ci y sumarle una consulta
                                         
                                         
                                     } else{

@@ -47,11 +47,11 @@ boolean EsVacio (ArboldePacientes a)
     return (boolean) (a == NULL);
 }
 
-void orden(ArboldePacientes a){
+void printOrden(ArboldePacientes a){
     if(a!=NULL){
-        orden(a->hizq);
+        printOrden(a->hizq);
         mostrarPaciente(a->p);
-        orden(a->hder);
+        printOrden(a->hder);
         
     }
 }
@@ -136,3 +136,16 @@ void buscarPacienteXcantConsu(ArboldePacientes a, int consulta){
         buscarPacienteXcantConsu(a->hizq,consulta);
     }
 }
+Paciente buscarPaciente (ArboldePacientes a, long int ci)
+{
+       if (darCedPac(a -> p) == ci )
+            return a->p;
+        else
+        {
+            if (ci < darCedPac(a->p))
+                return buscarPaciente (a -> hizq, ci);
+            else
+                return buscarPaciente (a -> hder, ci);
+        }
+    }
+

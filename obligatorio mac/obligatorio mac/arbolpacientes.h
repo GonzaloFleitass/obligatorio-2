@@ -19,7 +19,7 @@ boolean Pertenece (ArboldePacientes a, long int ci);
 
 boolean EsVacio (ArboldePacientes a);
 
-void orden(ArboldePacientes a);
+void printOrden(ArboldePacientes a);
 
 void sinConsultas(ArboldePacientes a);
 
@@ -29,4 +29,5 @@ void borrarminimo (ArboldePacientes &a);
 
 void borrar (ArboldePacientes &a, Paciente p);
 void buscarPacienteXcantConsu(ArboldePacientes a, int consulta);
+Paciente buscarPaciente (ArboldePacientes a, long int ci);
 #endif // ARBOLPACIENTES_H_INCLUDED
