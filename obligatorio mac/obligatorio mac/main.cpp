@@ -74,6 +74,7 @@ int main() {
                                 if(fechavalida(fech2)==TRUE){
                                     if(vacia(consultas)==TRUE){
                                         cargarConsulta(c,ci,fech);
+                                        
                                     } else{
                                         if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
                                             cargarConsulta(c,ci,fech);

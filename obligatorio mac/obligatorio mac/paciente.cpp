@@ -44,4 +44,6 @@ int darCantCons (Paciente p){
     return p.cantConsultas;
 }
 
-
+void cargarCantConsu(Paciente &p){
+    p.cantConsultas++;
+}
