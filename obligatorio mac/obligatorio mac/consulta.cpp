@@ -15,6 +15,7 @@ void cargarConsulta(consulta &a,long int ci,Fecha b){
     a.ci=ci;
     cargarEvaluacion(a.eva);
     a.Fech=b;
+   
 }
 void mostrarConsulta(consulta a){
     printf("Fecha: ");
