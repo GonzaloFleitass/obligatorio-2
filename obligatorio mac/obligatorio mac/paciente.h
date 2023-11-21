@@ -23,4 +23,5 @@ void cargarCantConsu(Paciente &p);
 
 
 
+
 #endif // PACIENTE_H_INCLUDED

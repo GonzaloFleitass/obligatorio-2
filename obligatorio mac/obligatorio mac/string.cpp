@@ -96,9 +96,3 @@ boolean streq (string s1, string s2)
 
 
 
-/*void strswp (string &s1,string &s2) {
-    string aux;
-    strcop (aux,s1);
-    strcop (s1,s2);
-    strcop (s2,aux);
-}*/

@@ -22,8 +22,8 @@ void DesplegarListaFecha(Lista l,Fecha a){
     while(l!=NULL){
         if(comparaFecha(devolverFechConsulta(l->con),a)==TRUE){
             mostrarConsulta(l->con);
-            l=l->sig;
         }
+        l=l->sig;
     }
 }
 void DesplegarConsultasPacienteCI(Lista l, long int  CI){

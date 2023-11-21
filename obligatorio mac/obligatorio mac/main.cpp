@@ -77,6 +77,7 @@ int main() {
                                         cargarConsulta(c,ci2,fech);
                                         InsFrontConsulta(consultas,c);
                                         
+                                        
                                     } else{
                                         if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
                                             cargarConsulta(c,ci2,fech);
@@ -107,5 +108,6 @@ int main() {
                         break;
                 }
         }while(termine!=TRUE);
-    }
+    return 0;
+}
 
