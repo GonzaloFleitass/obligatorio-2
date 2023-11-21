@@ -33,7 +33,6 @@ int main() {
                             cargarPaciente(p);
                             Insert(a, p);
                         }
-                        system("pause");
                         break;
                     case 2:
                         printf("Ingrese CI del paciente que desea eliminar:");
@@ -44,17 +43,17 @@ int main() {
                         }else{
                             printf("El paciente no existe\n");
                         }
-                        system("pause");
+                     
                             break;
                         case 3:
                             if(EsVacio(a))
                                 printf("No existen pacientes\n");
                             else
                                 orden(a);
-                            system("pause");
+                           
                             break;
                         case 4:sinConsultas (a);
-                            system("pause");
+                        
                             break;
                         case 5:
                             break;
