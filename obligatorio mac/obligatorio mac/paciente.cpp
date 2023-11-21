@@ -2,7 +2,8 @@
 #include "paciente.h"
 
 
-void cargarPaciente (Paciente &p){
+void cargarPaciente (Paciente &p,long int ci){
+    p.cedula=ci;
     printf("Ingrese el nombre: ");
     fflush(stdin);
     strcrear(p.nombre);

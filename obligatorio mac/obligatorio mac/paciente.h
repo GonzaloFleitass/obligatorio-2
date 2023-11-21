@@ -11,7 +11,7 @@ typedef struct {
 } Paciente;
 
 
-void cargarPaciente (Paciente &p);//Carga los datos de un paciente
+void cargarPaciente (Paciente &p, long int ci);//Carga los datos de un paciente
 void mostrarPaciente (Paciente p);// Muestra datos del paciente por pantalla
 long int darCedPac (Paciente p);// Devuelve la cedula del paciente
 void darNombre (Paciente p, string &s);//Devuelve el nombre de un paciente

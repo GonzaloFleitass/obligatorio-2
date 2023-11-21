@@ -29,8 +29,7 @@ int main() {
                         if(Pertenece(a, ci)){
                             printf("El paciente ya existe");
                         }else{
-                            p.cedula=ci;
-                            cargarPaciente(p);
+                            cargarPaciente(p, ci);
                             Insert(a, p);
                         }
                         break;
