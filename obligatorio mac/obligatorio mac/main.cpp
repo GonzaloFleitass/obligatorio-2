@@ -6,7 +6,7 @@
 
 int main() {
     int opcion,opcionsub1,opcionsub2;
-    long int ci=0;
+    long int ci=0,ci2;
     boolean termine=FALSE;
     ArboldePacientes a;
     Paciente p;
@@ -67,16 +67,16 @@ int main() {
 
                             case 1:
                                 printf("Ingrese CI: ");
-                                    scanf("%ld",&ci);
-                                if(Pertenece(a, ci)==TRUE)
+                                    scanf("%ld",&ci2);
+                                if(Pertenece(a, ci2)==TRUE)
                                     CargaFech(fech2);
                                 if(fechavalida(fech2)==TRUE){
                                     if(vacia(consultas)==TRUE){
-                                        cargarConsulta(c,ci,fech);
+                                        cargarConsulta(c,ci2,fech);
                                         
                                     } else{
                                         if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
-                                            cargarConsulta(c,ci,fech);
+                                            cargarConsulta(c,ci2,fech);
                                         }else{
                                             printf("El paciente no esta registrado");
                                         }
