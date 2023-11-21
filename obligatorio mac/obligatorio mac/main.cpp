@@ -11,10 +11,12 @@ int main() {
     ArboldePacientes a;
     Paciente p;
     consulta c;
+   
     Fecha fech,fech2;
     Lista consultas;
     Crear(consultas);
     Crear(a);
+   
     do{
         system("cls");
         mostarmenu1( opcion);
@@ -83,7 +85,6 @@ int main() {
                                         }
                                     }
                                 }
-
                                 break;
                             case 2:
                             case 3:printf("Ingrese Fecha");
