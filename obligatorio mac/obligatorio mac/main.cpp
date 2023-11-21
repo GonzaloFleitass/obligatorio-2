@@ -76,7 +76,7 @@ int main() {
                                     if(vacia(consultas)==TRUE){
                                         cargarConsulta(c,ci2,fech);
                                         InsFrontConsulta(consultas,c);
-                                        
+                                      cargarCantConsu(buscarPaciente(a,ci2));
                                         //buscar paciente con ci y sumarle una consulta
                                         
                                         
