@@ -89,7 +89,10 @@ int main() {
                                 CargaFech(fech);
                                 DesplegarListaFecha(consultas,fech);
                                 break;
-                            case 4:
+                            case 4:int cantConsu;
+                                printf("Ingrese cantidad de consultas:");
+                                scanf("%d",&cantConsu);
+                                buscarPacienteXcantConsu(a,cantConsu);
                             case 5:
                             case 6:
                             case 7:

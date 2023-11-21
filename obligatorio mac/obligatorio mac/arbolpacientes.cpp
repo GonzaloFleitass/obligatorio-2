@@ -126,4 +126,12 @@ void borrar (ArboldePacientes &a, Paciente p)
 			borrar (a->hder, p);
 	}
 }
-    
+void buscarPacienteXcantConsu(ArboldePacientes a, int consulta){
+    if(a!=NULL){
+        if(darCantCons(a->p)==consulta){
+            mostrarPaciente(a->p);
+        }
+        buscarPacienteXcantConsu(a->hder,consulta);
+        buscarPacienteXcantConsu(a->hizq,consulta);
+    }
+}

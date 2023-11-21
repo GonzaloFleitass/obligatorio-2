@@ -28,5 +28,5 @@ Paciente minimo (ArboldePacientes a);
 void borrarminimo (ArboldePacientes &a);
 
 void borrar (ArboldePacientes &a, Paciente p);
-
+void buscarPacienteXcantConsu(ArboldePacientes a, int consulta);
 #endif // ARBOLPACIENTES_H_INCLUDED
