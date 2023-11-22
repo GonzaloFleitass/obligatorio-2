@@ -77,14 +77,14 @@ int main() {
                                         if(vacia(consultas)==TRUE){
                                             cargarConsulta(c,ci2,fech);
                                             InsFrontConsulta(consultas,c);
-                                            buscarPaciente(a,ci);
+                                            sumarConsultaPaciente(a, ci2);
                                             //buscar paciente con ci y sumarle una consulta
                                         } 
                                         else{
                                             if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
                                                 cargarConsulta(c,ci2,fech);
                                                 InsFrontConsulta(consultas,c);
-                                                buscarPaciente(a,ci);
+                                                sumarConsultaPaciente(a, ci2);
                                                 //buscar paciente con ci y sumarle una consulta
                                             }else{
                                                 printf("El paciente no esta registrado");
@@ -109,6 +109,8 @@ int main() {
                                 printf("Cantidad de Consultas del Tipo Saludable:%d\n",saludable);
                             case 6:
                             case 7:
+                                
+                                
                             case 8:
                                 break;
 
