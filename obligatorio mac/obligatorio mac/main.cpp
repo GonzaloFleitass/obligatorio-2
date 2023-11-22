@@ -93,7 +93,10 @@ int main() {
                                     }
                                 }
                                 break;
-                            case 2:
+                            case 2:long int ciBusca;
+                                printf("ingrese Ci a buscar:");
+                                scanf("%ld",&ciBusca);
+                                mostrarConsultasCI(consultas,ciBusca);
                             case 3:printf("Ingrese Fecha");
                                 CargaFech(fech);
                                 DesplegarListaFecha(consultas,fech);
