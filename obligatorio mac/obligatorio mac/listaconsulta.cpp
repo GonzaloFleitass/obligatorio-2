@@ -68,6 +68,7 @@ void mostrarConsultasCI(Lista li,long int ci){
     while(li!=NULL){
         if(devolverCiConsulta(li->con)==ci){
             mostrarConsulta(li->con);
+            printf("\n");
         }
         li=li->sig;
     }
