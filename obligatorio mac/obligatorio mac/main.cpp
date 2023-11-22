@@ -97,6 +97,7 @@ int main() {
                                 printf("ingrese Ci a buscar:");
                                 scanf("%ld",&ciBusca);
                                 mostrarConsultasCI(consultas,ciBusca);
+                                break;
                             case 3:printf("Ingrese Fecha");
                                 CargaFech(fech);
                                 DesplegarListaFecha(consultas,fech);
@@ -110,6 +111,7 @@ int main() {
                                 printf("Cantidad de Consulta del Tipo En Tratmiento es:%d\n",enTratamiento);
                                 printf("Cantidad de Consultas del Tipo Necesita Protesis:%d\n",necesitaProtesis);
                                 printf("Cantidad de Consultas del Tipo Saludable:%d\n",saludable);
+                                break;
                             case 6:
                             case 7:
                                 

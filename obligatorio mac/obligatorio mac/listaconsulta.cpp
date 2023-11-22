@@ -64,10 +64,12 @@ void contadorTiposConsulta(Lista z,int &a,int &b,int &c){
     
     
 }
-void mostrarConsultasCI(Lista a,long int ci){
-    if(devolverCiConsulta(a->con)==ci){
-        mostrarConsulta(a->con);
-    }else{
-      a=a->sig;
+void mostrarConsultasCI(Lista li,long int ci){
+    while(li!=NULL){
+        if(devolverCiConsulta(li->con)==ci){
+            mostrarConsulta(li->con);
+        }
+        li=li->sig;
     }
 }
+
