@@ -69,22 +69,25 @@ int main() {
 
                             case 1:
                                 printf("Ingrese CI: ");
-                                    scanf("%ld",&ci2);
+                                scanf("%ld",&ci2);
                                 if(Pertenece(a, ci2)==TRUE)
+                                {
                                     CargaFech(fech2);
-                                if(fechavalida(fech2)==TRUE){
-                                    if(vacia(consultas)==TRUE){
-                                        cargarConsulta(c,ci2,fech);
-                                        InsFrontConsulta(consultas,c);
-                                         buscarPaciente(a,ci);
-                                        //buscar paciente con ci y sumarle una consulta
-                                        
-                                        
-                                    } else{
-                                        if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
+                                    if(fechavalida(fech2)==TRUE){
+                                        if(vacia(consultas)==TRUE){
                                             cargarConsulta(c,ci2,fech);
-                                        }else{
-                                            printf("El paciente no esta registrado");
+                                            InsFrontConsulta(consultas,c);
+                                            buscarPaciente(a,ci);
+                                            //buscar paciente con ci y sumarle una consulta
+                                        } 
+                                        else{
+                                            if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
+                                                cargarConsulta(c,ci2,fech);
+                                                InsFrontConsulta(consultas,c);
+                                                buscarPaciente(a,ci);
+                                                //buscar paciente con ci y sumarle una consulta
+                                            }else{
+                                                printf("El paciente no esta registrado");
                                         }
                                     }
                                 }
