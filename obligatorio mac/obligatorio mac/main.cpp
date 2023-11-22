@@ -11,7 +11,7 @@ int main() {
     ArboldePacientes a;
     Paciente p;
     consulta c;
-
+    printf("hola");
     Fecha fech,fech2, fech3;
     Lista consultas;
     Crear(consultas);
