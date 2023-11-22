@@ -44,3 +44,18 @@ boolean vacia(Lista a){
     }else
         return FALSE;
 }
+void contadorTiposConsulta(Lista z,int &a,int &b,int &c){
+    while(z!=NULL){
+        switch(devolverEvaluacionConsulta(z->con)){
+            case EN_TRATAMIENTO: a++;
+                break;
+            case SALUDABLE: b++;
+                break;
+            case NECESITA_PROTESIS: c++;
+                break;
+        }
+        z=z->sig;
+    }
+    
+    
+}

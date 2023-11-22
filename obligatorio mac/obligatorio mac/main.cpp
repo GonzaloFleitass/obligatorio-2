@@ -5,7 +5,7 @@
 #include "listaconsulta.h"
 
 int main() {
-    int opcion,opcionsub1,opcionsub2;
+    int opcion,opcionsub1,opcionsub2,necesitaProtesis=0,enTratamiento=0,saludable=0;
     long int ci=0,ci2;
     boolean termine=FALSE;
     ArboldePacientes a;
@@ -98,7 +98,10 @@ int main() {
                                 printf("Ingrese cantidad de consultas:");
                                 scanf("%d",&cantConsu);
                                 buscarPacienteXcantConsu(a,cantConsu);
-                            case 5:
+                            case 5:contadorTiposConsulta(consultas,enTratamiento,necesitaProtesis,saludable);
+                                printf("Cantidad de Consulta del Tipo En Tratmiento es:%d",enTratamiento);
+                                printf("Cantidad de Consultas del Tipo Necesita Protesis:%d",necesitaProtesis);
+                                printf("Cantidad de Consultas del Tipo Saludable:%d",saludable);
                             case 6:
                             case 7:
                             case 8:

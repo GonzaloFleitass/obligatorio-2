@@ -16,4 +16,5 @@ void DesplegarListaFecha(Lista l,Fecha a);//despleiga lista con el filtro de bus
 void DesplegarConsultasPacienteCI(Lista l, long int CI);
 Fecha devolverFechaUltimo(Lista l);
 boolean vacia(Lista a);
+void contadorTiposConsulta(Lista z,int &a,int &b,int &c);
 #endif // LISTACONSULTA_H_INCLUDED
