@@ -136,16 +136,16 @@ void buscarPacienteXcantConsu(ArboldePacientes a, int consulta){
         buscarPacienteXcantConsu(a->hizq,consulta);
     }
 }
-Paciente buscarPaciente (ArboldePacientes a, long int ci)
+void sumarConsultaPaciente (ArboldePacientes a, long int ci)
 {
        if (darCedPac(a -> p) == ci )
-            return a->p;
+           return cargarCantConsu(a->p);
         else
         {
             if (ci < darCedPac(a->p))
-                return buscarPaciente (a -> hizq, ci);
+                return sumarConsultaPaciente (a -> hizq, ci);
             else
-                return buscarPaciente (a -> hder, ci);
+                return sumarConsultaPaciente (a -> hder, ci);
         }
     }
 
