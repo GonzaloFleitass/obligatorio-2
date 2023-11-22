@@ -120,15 +120,15 @@ int main() {
                                 printf("Cantidad de Consultas del Tipo Saludable:%d\n",saludable);
                                 system("pause");
                                 break;
-                            case 6:int cantFech = 0;
+                            case 6:
                                 CargaFech(fech3);
                                 cantConsultasFecha(consultas,fech3);
                                 system("pause");
                                 break;
 
                             case 7:
-
-
+                                darCiPacmasCons(a,ci3,cant);
+                                printf("El paciente con CI:%ld es el de mayor cantidad de consultas con %d consultas.\n",ci3,cant);
                             case 8:
                                 break;
 
