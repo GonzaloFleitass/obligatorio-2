@@ -46,5 +46,7 @@ int darCantCons (Paciente p){
 }
 
 void cargarCantConsu(Paciente &p){
-    p.cantConsultas++;
-}
+  
+        p.cantConsultas++;
+    }
+

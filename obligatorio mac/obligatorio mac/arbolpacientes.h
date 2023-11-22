@@ -30,4 +30,5 @@ void borrarminimo (ArboldePacientes &a);
 void borrar (ArboldePacientes &a, Paciente p);
 void buscarPacienteXcantConsu(ArboldePacientes a, int consulta);
 Paciente buscarPaciente (ArboldePacientes a, long int ci);
+
 #endif // ARBOLPACIENTES_H_INCLUDED
