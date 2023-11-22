@@ -75,7 +75,7 @@ int main() {
                                     CargaFech(fech2);
                                     if(fechavalida(fech2)==TRUE){
                                         if(vacia(consultas)==TRUE){
-                                            cargarConsulta(c,ci2,fech);
+                                            cargarConsulta(c,ci2,fech2);
                                             InsFrontConsulta(consultas,c);
                                             sumarConsultaPaciente(a, ci2);
                                             //buscar paciente con ci y sumarle una consulta
@@ -87,10 +87,12 @@ int main() {
                                                 sumarConsultaPaciente(a, ci2);
                                                 //buscar paciente con ci y sumarle una consulta
                                             }else{
-                                                printf("El paciente no esta registrado");
+                                                printf("Solo puede registrarse Paciente con Fecha iguales o Posteriores a la ultima Ingresada");
                                             }
                                         }
                                     }
+                                }else{
+                                    printf("Paciente no Registrado");
                                 }
                                 break;
                             case 2:long int ciBusca;
