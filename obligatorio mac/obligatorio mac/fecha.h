@@ -4,9 +4,9 @@
 
 
 typedef struct fecha{
-    int dia=0;
-    int mes=0;
-    int anio=0;
+    int dia;
+    int mes;
+    int anio;
 }Fecha;
 
 

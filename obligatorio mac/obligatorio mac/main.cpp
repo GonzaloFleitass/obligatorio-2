@@ -65,35 +65,41 @@ int main() {
                 case 2:
                     system("cls");
                     submenuconsultas(opcionsub2);
-                        switch(opcionsub2){
-
-                            case 1:
-                                printf("Ingrese CI: ");
-                                scanf("%ld",&ci2);
-                                if(Pertenece(a, ci2)==TRUE)
-                                {
-                                    CargaFech(fech2);
-                                    if(fechavalida(fech2)==TRUE){
-                                        if(vacia(consultas)==TRUE){
-                                            cargarConsulta(c,ci2,fech);
-                                            InsFrontConsulta(consultas,c);
-                                            sumarConsultaPaciente(a, ci2);
-                                            //buscar paciente con ci y sumarle una consulta
-                                        } 
-                                        else{
-                                            if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
-                                                cargarConsulta(c,ci2,fech);
-                                                InsFrontConsulta(consultas,c);
-                                                sumarConsultaPaciente(a, ci2);
-                                                //buscar paciente con ci y sumarle una consulta
-                                            }else{
-                                                printf("El paciente no esta registrado");
-                                            }
-                                        }
+                switch(opcionsub2){
+                        
+                    case 1:
+                        printf("Ingrese CI: ");
+                        scanf("%ld",&ci2);
+                        if(Pertenece(a, ci2)==TRUE)
+                        {
+                            CargaFech(fech2);
+                            if(fechavalida(fech2)==TRUE){
+                                if(vacia(consultas)==TRUE){
+                                    cargarConsulta(c,ci2,fech2);
+                                    InsFrontConsulta(consultas,c);
+                                    sumarConsultaPaciente(a, ci2);
+                                    //buscar paciente con ci y sumarle una consulta
+                                }
+                                else{
+                                    if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
+                                        cargarConsulta(c,ci2,fech);
+                                        InsFrontConsulta(consultas,c);
+                                        sumarConsultaPaciente(a, ci2);
+                                        //buscar paciente con ci y sumarle una consulta
+                                    }else{
+                                        printf("Solo puede registrarse Paciente con Fecha iguales o Posteriores a la ultima Ingresada");
                                     }
                                 }
+                            }
+                        }else{
+                            printf("Paciente no Registrado");
+                        }
                                 break;
-                            case 2:
+                            case 2:long int ciBusca;
+                                printf("ingrese Ci a buscar:");
+                                scanf("%ld",&ciBusca);
+                                mostrarConsultasCI(consultas,ciBusca);
+                                break;
                             case 3:printf("Ingrese Fecha");
                                 CargaFech(fech);
                                 DesplegarListaFecha(consultas,fech);
@@ -103,11 +109,11 @@ int main() {
                                 scanf("%d",&cantConsu);
                                 buscarPacienteXcantConsu(a,cantConsu);
                             case 5:
-                                DesplegarLista(consultas);
                                 contadorTiposConsulta(consultas,enTratamiento,saludable,necesitaProtesis);
                                 printf("Cantidad de Consulta del Tipo En Tratmiento es:%d\n",enTratamiento);
                                 printf("Cantidad de Consultas del Tipo Necesita Protesis:%d\n",necesitaProtesis);
                                 printf("Cantidad de Consultas del Tipo Saludable:%d\n",saludable);
+                                break;
                             case 6:
                             case 7:
                                 

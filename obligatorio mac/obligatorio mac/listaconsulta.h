@@ -17,4 +17,5 @@ void DesplegarConsultasPacienteCI(Lista l, long int CI);
 Fecha devolverFechaUltimo(Lista l);
 boolean vacia(Lista a);
 void contadorTiposConsulta(Lista z,int &a,int &b,int &c);
+void mostrarConsultasCI(Lista a,long int ci);
 #endif // LISTACONSULTA_H_INCLUDED
