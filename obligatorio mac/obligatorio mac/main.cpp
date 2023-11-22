@@ -66,33 +66,34 @@ int main() {
                 case 2:
                     system("cls");
                     submenuconsultas(opcionsub2);
-                        switch(opcionsub2){
-
-                            case 1:
-                                printf("Ingrese CI: ");
-                                scanf("%ld",&ci2);
-                                if(Pertenece(a, ci2)==TRUE)
-                                {
-                                    CargaFech(fech2);
-                                    if(fechavalida(fech2)==TRUE){
-                                        if(vacia(consultas)==TRUE){
-                                            cargarConsulta(c,ci2,fech2);
-                                            InsFrontConsulta(consultas,c);
-                                            sumarConsultaPaciente(a, ci2);
-                                            //buscar paciente con ci y sumarle una consulta
-                                        }
-                                        else{
-                                            if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
-                                                cargarConsulta(c,ci2,fech2);
-                                                InsFrontConsulta(consultas,c);
-                                                sumarConsultaPaciente(a, ci2);
-                                                //buscar paciente con ci y sumarle una consulta
-                                            }else{
-                                                printf("El paciente no esta registrado");
-                                            }
-                                        }
+                switch(opcionsub2){
+                        
+                    case 1:
+                        printf("Ingrese CI: ");
+                        scanf("%ld",&ci2);
+                        if(Pertenece(a, ci2)==TRUE)
+                        {
+                            CargaFech(fech2);
+                            if(fechavalida(fech2)==TRUE){
+                                if(vacia(consultas)==TRUE){
+                                    cargarConsulta(c,ci2,fech2);
+                                    InsFrontConsulta(consultas,c);
+                                    sumarConsultaPaciente(a, ci2);
+                                    //buscar paciente con ci y sumarle una consulta
+                                }
+                                else{
+                                    if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
+                                        cargarConsulta(c,ci2,fech2);
+                                        InsFrontConsulta(consultas,c);
+                                        sumarConsultaPaciente(a, ci2);
+                                        //buscar paciente con ci y sumarle una consulta
+                                    }else{
+                                        printf("El paciente no esta registrado");
                                     }
                                 }
+                            }
+                        }
+                
                                 system("pause");
                                 break;
                             case 2:long int ciBusca;
@@ -119,27 +120,12 @@ int main() {
                                 printf("Cantidad de Consultas del Tipo Saludable:%d\n",saludable);
                                 system("pause");
                                 break;
-                            case 6:int cantFech;
+                            case 6:int cantFech = 0;
                                 CargaFech(fech3);
-                                if(fechavalida(fech3))
-                                {
-                                       while(consultas != NULL)
-                                       {
-                                            comparaFecha(fech3, c.Fech);
-                                            if(comparaFecha)
-                                                cantFech++;
-                                            consultas = consultas->sig;
-                                       }
-                                }
-                                if(comparaFecha)
-                                    printf("La cantidad de consultas en esta fecha es: %d\n", cantFech);
-                                else
-                                    printf("No hay consultas en esta fecha\n");
-                                system("pause");
+                                cantConsultasFecha(consultas, fech3);
                                 break;
-
-                            case 7:
-
+                            case 7: 
+                                break;
 
                             case 8:
                                 break;
