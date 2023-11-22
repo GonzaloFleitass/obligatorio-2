@@ -49,6 +49,7 @@ void contadorTiposConsulta(Lista z,int &a,int &b,int &c){
     b=0;
     c=0;
     while(z!=NULL){
+        printf("antes de sumar %d %d %d",a,b,c);
         switch(devolverEvaluacionConsulta(z->con)){
             case EN_TRATAMIENTO: a++;
                 break;
@@ -57,6 +58,8 @@ void contadorTiposConsulta(Lista z,int &a,int &b,int &c){
             case NECESITA_PROTESIS: c++;
                 break;
         }
+        printf("despues de sumar %d %d %d",a,b,c);
+        
         z=z->sig;
     }
     
