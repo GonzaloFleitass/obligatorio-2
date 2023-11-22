@@ -151,6 +151,7 @@ void sumarConsultaPaciente (ArboldePacientes a, long int ci)
 void cargaPacmasCons(ArboldePacientes a,long int &ci, int &cant){
     ci=darCedPac(a->p);
    cant=darCantCons(a->p);
+    darCiPacmasCons(a, ci, cant);
 }
 
 void darCiPacmasCons (ArboldePacientes a,long int &ci, int &cant){
