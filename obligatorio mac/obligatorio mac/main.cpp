@@ -99,9 +99,9 @@ int main() {
                                 scanf("%d",&cantConsu);
                                 buscarPacienteXcantConsu(a,cantConsu);
                             case 5:contadorTiposConsulta(consultas,enTratamiento,necesitaProtesis,saludable);
-                                printf("Cantidad de Consulta del Tipo En Tratmiento es:%d",enTratamiento);
-                                printf("Cantidad de Consultas del Tipo Necesita Protesis:%d",necesitaProtesis);
-                                printf("Cantidad de Consultas del Tipo Saludable:%d",saludable);
+                                printf("Cantidad de Consulta del Tipo En Tratmiento es:%d/n",enTratamiento);
+                                printf("Cantidad de Consultas del Tipo Necesita Protesis:%d/n",necesitaProtesis);
+                                printf("Cantidad de Consultas del Tipo Saludable:%d/n",saludable);
                             case 6:
                             case 7:
                             case 8:
