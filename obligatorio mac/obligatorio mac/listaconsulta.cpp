@@ -45,6 +45,9 @@ boolean vacia(Lista a){
         return FALSE;
 }
 void contadorTiposConsulta(Lista z,int &a,int &b,int &c){
+    a=0;
+    b=0;
+    c=0;
     while(z!=NULL){
         switch(devolverEvaluacionConsulta(z->con)){
             case EN_TRATAMIENTO: a++;
