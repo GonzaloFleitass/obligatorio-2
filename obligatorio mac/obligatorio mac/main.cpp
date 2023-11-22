@@ -88,6 +88,7 @@ int main() {
                                                 //buscar paciente con ci y sumarle una consulta
                                             }else{
                                                 printf("El paciente no esta registrado");
+                                            }
                                         }
                                     }
                                 }
