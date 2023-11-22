@@ -73,24 +73,21 @@ void mostrarConsultasCI(Lista li,long int ci){
         li=li->sig;
     }
 }
-void cantConsultasFecha(Lista consultas,fecha fech3){
+void cantConsultasFecha(Lista consultas,Fecha fech3){
     int cantFech=0;
     if(fechavalida(fech3))
     {
         while(consultas != NULL)
         {
-            comparaFecha(fech3, devolverFechConsulta(consultas->con));
-            if(comparaFecha(fech3, devolverFechConsulta(consultas->con))){
-                cantFech++;
-                consultas = consultas->sig;
-            }
+            if(comparaFecha(fech3, devolverFechConsulta(consultas->con)))
+                    cantFech++;
+            consultas = consultas->sig;
         }
     }
-    if(comparaFecha(fech3, devolverFechConsulta(consultas->con))){
+    if(cantFech>0){
         printf("La cantidad de consultas en esta fecha es: %d\n", cantFech);
-    } else{
+    }else{
         printf("No hay consultas en esta fecha\n");
-        
-    }
-    
+        }
+
 }
