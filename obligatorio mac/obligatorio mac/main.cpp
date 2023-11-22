@@ -122,29 +122,12 @@ int main() {
                                 break;
                             case 6:int cantFech = 0;
                                 CargaFech(fech3);
-
-                                if(fechavalida(fech3))
-                                {
-                                       while(consultas != NULL)
-                                       {
-                                            comparaFecha(fech3, c.Fech);
-                                           if(&comparaFecha)
-                                                cantFech++;
-                                            consultas = consultas->sig;
-                                       }
-                                }
-                                if(&comparaFecha)
-                                    printf("La cantidad de consultas en esta fecha es: %d\n", cantFech);
-                                else
-                                    printf("No hay consultas en esta fecha\n");
-                                    system("pause");
+                                cantConsultasFecha(consultas,fech3);
+                                system("pause");
                                 break;
 
-                            case 7: darCiPacmasCons(a, ci3,cant);
-                                
-                                    cantConsultasFecha(consultas, fech3);
-                                break;
-                          
+                            case 7:
+
 
                             case 8:
                                 break;
