@@ -148,6 +148,18 @@ void sumarConsultaPaciente (ArboldePacientes a, long int ci)
                 return sumarConsultaPaciente (a -> hder, ci);
         }
     }
+void cargaPacmasCons(ArboldePacientes a,long int &ci, int &cant){
+    ci=darCedPac(a->p);
+   cant=darCantCons(a->p);
+}
 
-
+void darCiPacmasCons (ArboldePacientes a,long int &ci, int &cant){
+    if(a!=NULL){
+        darCiPacmasCons(a->hizq, ci, cant);
+        darCiPacmasCons(a->hder, ci, cant);
+        if(darCantCons(a->p)>cant)
+            cant=darCantCons(a->p);
+            ci=darCedPac(a->p);
+    }
+}
 

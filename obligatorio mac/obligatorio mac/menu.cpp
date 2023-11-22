@@ -57,7 +57,7 @@ void submenualtasybajas (int &opcionsub1){
     printf("\t\t\t\t|---------------------------------------------------------------|\n");
     printf("\t\t\t\t|      6. Obtener cantidad de consultas en X dia                |\n");
     printf("\t\t\t\t|---------------------------------------------------------------|\n");
-    printf("\t\t\t\t|      7. Obtener el paciente con la mayor cantidad de consulta |\n");
+    printf("\t\t\t\t|      7. Obtener CI del paciente con mas consultas y su CI     |\n");
     printf("\t\t\t\t|---------------------------------------------------------------|\n");
     printf("\t\t\t\t|      8. Volver al menu principal                              |\n");
     printf("\t\t\t\t*---------------------------------------------------------------*\n");
