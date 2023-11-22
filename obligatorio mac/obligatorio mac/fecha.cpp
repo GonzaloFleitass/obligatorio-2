@@ -86,10 +86,18 @@ boolean comparaFecha(Fecha a, Fecha b){
 boolean comparaFechaPosterior(Fecha a, Fecha b){
     boolean posterior=FALSE;
     
-    if(a.anio>=b.anio){
-        if(a.mes>=b.mes){
-            if(a.dia>=b.dia||a.mes>b.mes){
+    if(a.anio>b.anio){
+        posterior=TRUE;
+    } else{
+        if(a.anio==b.anio){
+            if(a.mes>b.mes){
                 posterior=TRUE;
+            }else{
+                if(a.mes==b.mes){
+                    if(a.dia>=b.dia){
+                        posterior=TRUE;
+                    }
+                }
             }
         }
     }
