@@ -94,5 +94,15 @@ boolean streq (string s1, string s2)
         return iguales;
     }
 
+void Bajar_String (string s, FILE * f) 
+    {
+    int i=0;
+    while (s[i] != '\0')
+                        {
+                                fwrite (&s[i], sizeof(char), 1, f);
+                                i++;
+                        }
+fwrite (&s[i], sizeof(char), 1, f);
+}
 
 

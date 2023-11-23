@@ -50,3 +50,18 @@ void cargarCantConsu(Paciente &p){
         p.cantConsultas++;
     }
 
+void bajarPaciente (Paciente p, FILE * f){
+    fwrite(&p.cedula, sizeof(long int), 1, f);
+    Bajar_String(p.nombre, f);
+    Bajar_String(p.apellido, f);
+    fwrite(&p.telefono, sizeof(long int), 1, f);
+    fwrite(&p.cantConsultas, sizeof(int), 1, f);
+}
+
+void levantarPaciente (Paciente p, FILE * f){
+    fread(&p.cedula, sizeof(long int), 1, f);
+    Bajar_String(p.nombre, f);
+    Bajar_String(p.apellido, f);
+    fread(&p.telefono, sizeof(long int), 1, f);
+    fread(&p.cantConsultas, sizeof(int), 1, f);
+}

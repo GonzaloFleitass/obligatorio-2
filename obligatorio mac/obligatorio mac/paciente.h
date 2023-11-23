@@ -20,8 +20,8 @@ long int darTel (Paciente p);//Devuelve el telefono del paciente
 int darCantCons (Paciente p);// Devuelve la cantidad de consultas
 void cargarCedula (Paciente &p, long int c);//Cargar cedula del paciente
 void cargarCantConsu(Paciente &p); //suma consulta al paciente
-
-
+void bajarPaciente (Paciente p, FILE * f);
+void levantarPaciente (Paciente p, FILE * f);
 
 
 #endif // PACIENTE_H_INCLUDED

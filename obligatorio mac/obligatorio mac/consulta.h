@@ -21,5 +21,6 @@ Fecha devolverFechConsulta(consulta b);/*devuelve el valor de fecha adentro de c
 void devolverMotivoConsulta(consulta b,string &a);/*devuelve el valor de motivo adentro de consulta*/
 long int devolverCiConsulta(consulta b);/*devuelve el valor de la cedula */
 evaluacion devolverEvaluacionConsulta(consulta b);/*devuelve el valor de la evaluacion dentro de consulta*/
-
+void bajarConsulta (consulta b, FILE * f);
+void levantarConsulta (consulta b, FILE * f);
 #endif // CONSULTA_H_INCLUDED

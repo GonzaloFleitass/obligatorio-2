@@ -19,4 +19,7 @@ boolean vacia(Lista a);
 void contadorTiposConsulta(Lista z,int &a,int &b,int &c);
 void mostrarConsultasCI(Lista a,long int ci);
 void cantConsultasFecha(Lista consultas,fecha fech3);
+void bajarLista (Lista l, FILE * f);
+void levantarLista (Lista l, FILE * f);
+
 #endif // LISTACONSULTA_H_INCLUDED
