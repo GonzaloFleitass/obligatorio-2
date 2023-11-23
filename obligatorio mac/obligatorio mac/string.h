@@ -15,5 +15,5 @@ boolean strmen (string s1, string s2);;//Devuelve TRUE si el primer string es me
 boolean streq (string s1, string s2);//reciba dos strings y devuelva TRUE si ambos strings son iguales o FALSE en caso contrario.
 
 void strswp (string &s1,string &s2);//reciba dos strings y devuelva el primero en el segundo y viceversa.
-
+void Bajar_String (string s, FILE * f);
 #endif // STRING_H_INCLUDED

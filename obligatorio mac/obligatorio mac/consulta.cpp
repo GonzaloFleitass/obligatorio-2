@@ -41,3 +41,16 @@ evaluacion devolverEvaluacionConsulta(consulta b){
 }
 
 
+void bajarConsulta (consulta b, FILE * f){
+    fwrite (&b.Fech, sizeof(fecha), 1, f);
+    Bajar_String(b.motivoConsulta, f);
+    fwrite(&b.ci, sizeof(long int), 1, f);
+    fwrite(&b.eva, sizeof(evaluacion), 1, f);
+}
+
+void levantarConsulta (consulta b, FILE * f){
+    fread (&b.Fech, sizeof(fecha), 1, f);
+    Bajar_String(b.motivoConsulta, f);
+    fread(&b.ci, sizeof(long int), 1, f);
+    fread(&b.eva, sizeof(evaluacion), 1, f);
+}
