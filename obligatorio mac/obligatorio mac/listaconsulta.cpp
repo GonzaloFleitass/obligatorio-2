@@ -91,3 +91,16 @@ void cantConsultasFecha(Lista consultas,Fecha fech3){
         }
 
 }
+void bajarLista (Lista l, FILE *f){
+    while(l!=NULL){
+        bajarConsulta(l->con, f);
+        l=l->sig;
+    }
+}
+
+void levantarLista(Lista l, FILE * f){
+    while(l!=NULL){
+        levantarConsulta(l->con, f);
+        l=l->sig;
+    }
+}

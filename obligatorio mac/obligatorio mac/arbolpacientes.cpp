@@ -165,3 +165,19 @@ void cargaCiPacmasCons (ArboldePacientes a,long int &ci, int &cant){
     }
 }
 
+void bajarArbol (ArboldePacientes a, FILE * f){
+    if(a!=NULL){
+        bajarArbol(a->hizq, f);
+        bajarPaciente(a->p, f);
+        bajarArbol(a->hder, f);
+    }
+}
+
+void levantarArbol (ArboldePacientes a, FILE * f){
+    if(a!=NULL){
+        levantarArbol(a->hizq, f);
+        levantarPaciente(a->p, f);
+        levantarArbol(a->hder, f);
+    }
+}
+
