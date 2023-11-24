@@ -111,6 +111,7 @@ void abrirLista(Lista &l){
         Crear(l);
     else
         levantarLista(l, f);
+    fclose(f);
 }
 
 void cerrarLista (Lista &l){

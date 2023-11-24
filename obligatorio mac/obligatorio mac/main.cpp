@@ -135,9 +135,10 @@ int main() {
                         }
                         break;
                 case 3: termine=TRUE;
+                    cerrarLista(consultas);
+                    cerrarArbol(a);
                         break;
                 }
         }while(termine!=TRUE);
-    cerrarLista(consultas);
-    cerrarArbol(a);
+    
 }

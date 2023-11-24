@@ -187,7 +187,7 @@ void abrirArbol (ArboldePacientes &a){
         Crear(a);
     else
         levantarArbol(a, f);
-    
+    fclose(f);
 }
 
 void cerrarArbol (ArboldePacientes &a){
