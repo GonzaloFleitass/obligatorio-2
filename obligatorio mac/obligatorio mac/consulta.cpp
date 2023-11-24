@@ -11,6 +11,7 @@ void cargarConsulta(consulta &a,long int ci,Fecha b){
 
     printf("Ingrese Motivo de la consulta:");
     strcrear (a.motivoConsulta);
+    fflush(stdin);
     scan(a.motivoConsulta);
     a.ci=ci;
     cargarEvaluacion(a.eva);
