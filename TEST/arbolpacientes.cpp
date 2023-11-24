@@ -47,21 +47,22 @@ boolean EsVacio (ArboldePacientes a)
     return (boolean) (a == NULL);
 }
 
-void orden(ArboldePacientes a){
+void printOrden(ArboldePacientes a){
     if(a!=NULL){
-        orden(a->hizq);
+        printOrden(a->hizq);
         mostrarPaciente(a->p);
-        orden(a->hder);
+        printOrden(a->hder);
         
     }
 }
 
 void sinConsultas(ArboldePacientes a){
     if(a!=NULL){
-        if(darCantCons( a->p)==0){
+        if(darCantCons( a->p)==0)
             mostrarPaciente(a->p);
-            
-        }
+            sinConsultas(a->hizq);
+            sinConsultas(a->hder);
+        
     }
 }
 
@@ -125,5 +126,73 @@ void borrar (ArboldePacientes &a, Paciente p)
 		else
 			borrar (a->hder, p);
 	}
+}
+void buscarPacienteXcantConsu(ArboldePacientes a, int consulta){
+    if(a!=NULL){
+        if(darCantCons(a->p)==consulta){
+            mostrarPaciente(a->p);
+        }
+        buscarPacienteXcantConsu(a->hder,consulta);
+        buscarPacienteXcantConsu(a->hizq,consulta);
+    }
+}
+void sumarConsultaPaciente (ArboldePacientes a, long int ci)
+{
+       if (darCedPac(a -> p) == ci )
+           return cargarCantConsu(a->p);
+        else
+        {
+            if (ci < darCedPac(a->p))
+                return sumarConsultaPaciente (a -> hizq, ci);
+            else
+                return sumarConsultaPaciente (a -> hder, ci);
+        }
+    }
+void darCiPacmasCons(ArboldePacientes a,long int &ci, int &cant){
+    if(a!=NULL){
+        ci=darCedPac(a->p);
+        cant=darCantCons(a->p);
+        cargaCiPacmasCons(a, ci, cant);
+    }
+}
+void cargaCiPacmasCons (ArboldePacientes a,long int &ci, int &cant){
+    if(a!=NULL){
+        darCiPacmasCons(a->hizq, ci, cant);
+        darCiPacmasCons(a->hder, ci, cant);
+        if(darCantCons(a->p)>cant)
+            cant=darCantCons(a->p);
+            ci=darCedPac(a->p);
+    }
+}
+
+void bajarArbol (ArboldePacientes a, FILE * f){
+    if(a!=NULL){
+        bajarArbol(a->hizq, f);
+        bajarPaciente(a->p, f);
+        bajarArbol(a->hder, f);
+    }
+}
+
+void levantarArbol (ArboldePacientes a, FILE * f){
+    if(a!=NULL){
+        levantarArbol(a->hizq, f);
+        levantarPaciente(a->p, f);
+        levantarArbol(a->hder, f);
+    }
+}
+
+void abrirArbol (ArboldePacientes &a){
+ FILE  * f = fopen ("Pacientes.dat", "rb");
+    if(f==NULL)
+        Crear(a);
+    else
+        levantarArbol(a, f);
+    
+}
+
+void cerrarArbol (ArboldePacientes &a){
+    FILE * f = fopen ("Pacientes.dat", "wb");
+    bajarArbol(a, f);
+    fclose(f);
 }
     
