@@ -5,6 +5,8 @@
 #include "listaconsulta.h"
 
 int main() {
+
+
     int opcion,opcionsub1,opcionsub2,necesitaProtesis=0,enTratamiento=0,saludable=0,cant;
     long int ci=0,ci2,ci3;
     boolean termine=FALSE;
@@ -15,7 +17,7 @@ int main() {
     Lista consultas;
     abrirLista(consultas);
     abrirArbol(a);
-    
+
 
     do{
         system("cls");
@@ -67,7 +69,7 @@ int main() {
                     system("cls");
                     submenuconsultas(opcionsub2);
                 switch(opcionsub2){
-                        
+
                     case 1:
                         printf("Ingrese CI: ");
                         scanf("%ld",&ci2);
@@ -93,7 +95,7 @@ int main() {
                                 }
                             }
                         }
-                
+
                                 system("pause");
                                 break;
                             case 2:long int ciBusca;
@@ -140,5 +142,4 @@ int main() {
                         break;
                 }
         }while(termine!=TRUE);
-    
 }
