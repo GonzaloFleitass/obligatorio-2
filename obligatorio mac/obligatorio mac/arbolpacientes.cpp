@@ -181,3 +181,17 @@ void levantarArbol (ArboldePacientes a, FILE * f){
     }
 }
 
+void abrirArbol (ArboldePacientes &a){
+ FILE  * f = fopen ("Pacientes.dat", "rb");
+    if(f==NULL)
+        Crear(a);
+    else
+        levantarArbol(a, f);
+    
+}
+
+void cerrarArbol (ArboldePacientes &a){
+    FILE * f = fopen ("Pacientes.dat", "wb");
+    bajarArbol(a, f);
+    fclose(f);
+}

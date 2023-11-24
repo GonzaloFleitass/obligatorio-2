@@ -104,3 +104,17 @@ void levantarLista(Lista l, FILE * f){
         l=l->sig;
     }
 }
+
+void abrirLista(Lista &l){
+  FILE * f =fopen ("Consultas.dat", "rb");
+    if (f==NULL)
+        Crear(l);
+    else
+        levantarLista(l, f);
+}
+
+void cerrarLista (Lista &l){
+    FILE * f = fopen ("Consultas.dat", "wb");
+    bajarLista(l, f);
+    fclose (f);
+}

@@ -21,5 +21,6 @@ void mostrarConsultasCI(Lista a,long int ci);
 void cantConsultasFecha(Lista consultas,fecha fech3);
 void bajarLista (Lista l, FILE * f);
 void levantarLista (Lista l, FILE * f);
-
+void abrirLista(Lista &l);
+void cerrarLista (Lista &l);
 #endif // LISTACONSULTA_H_INCLUDED

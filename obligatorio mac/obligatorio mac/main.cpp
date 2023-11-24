@@ -11,11 +11,11 @@ int main() {
     ArboldePacientes a;
     Paciente p;
     consulta c;
-    printf("hola");
     Fecha fech,fech2, fech3;
     Lista consultas;
-    Crear(consultas);
-    Crear(a);
+    abrirLista(consultas);
+    abrirArbol(a);
+    
 
     do{
         system("cls");
@@ -138,5 +138,6 @@ int main() {
                         break;
                 }
         }while(termine!=TRUE);
-    return 0;
+    cerrarLista(consultas);
+    cerrarArbol(a);
 }
