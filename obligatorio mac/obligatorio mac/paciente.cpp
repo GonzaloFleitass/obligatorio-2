@@ -46,7 +46,7 @@ int darCantCons (Paciente p){
 }
 
 void cargarCantConsu(Paciente &p){
-  
+
         p.cantConsultas++;
     }
 
@@ -58,8 +58,10 @@ void bajarPaciente (Paciente p, FILE * f){
     fwrite(&p.cantConsultas, sizeof(int), 1, f);
 }
 
-void levantarPaciente (Paciente p, FILE * f){
+void levantarPaciente (Paciente &p, FILE * f){
     fread(&p.cedula, sizeof(long int), 1, f);
+    //strcrear(p.nombre);
+    //strcrear(p.apellido);
     Levantar_String(p.nombre, f);
     Levantar_String(p.apellido, f);
     fread(&p.telefono, sizeof(long int), 1, f);
