@@ -3,8 +3,8 @@
 
 typedef enum{FALSE,TRUE}boolean;
 
-void cargBool(boolean &a);
-void mostBool(boolean a);
+void cargBool(boolean &a);//Cargar el boolean
+void mostBool(boolean a);//Mostrar el boolean
 
 
 #endif // BOOLEAN_H_INCLUDED

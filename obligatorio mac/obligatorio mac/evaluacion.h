@@ -5,7 +5,7 @@
 typedef enum {EN_TRATAMIENTO, NECESITA_PROTESIS,
     SALUDABLE}evaluacion;
 
-void cargarEvaluacion(evaluacion &a);
-void mostrarEvaluacion(evaluacion a);
+void cargarEvaluacion(evaluacion &a);//Carga el tipo de evaluacion
+void mostrarEvaluacion(evaluacion a);//Muestra el tipo de evaluacion
 
 #endif // EVALUACION_H_INCLUDED
