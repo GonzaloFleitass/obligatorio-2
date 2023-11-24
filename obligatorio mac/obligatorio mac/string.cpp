@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include "string.h"
 
@@ -48,16 +47,18 @@ void print (string s)
     }
 }
 void scan (string &s) {
-    
+    string aux = new char[MAX];
     int i=0;
     char c;
     scanf ("%c",&c);
     while ((c != '\n') && (i < MAX-1)) {
-        s[i] = c;
+        aux[i] = c;
         i++;
         scanf("%c",&c);
     }
-    s[i] = '\0';
+    aux[i] = '\0';
+    strcop(aux, s);
+    strdestruir(aux);
 }
 
 boolean strmen (string s1, string s2)
@@ -94,27 +95,31 @@ boolean streq (string s1, string s2)
         return iguales;
     }
 
-void Bajar_String (string s, FILE * f) 
+void Bajar_String (string s, FILE * f)
     {
     int i=0;
     while (s[i] != '\0')
-                        {
-                                fwrite (&s[i], sizeof(char), 1, f);
-                                i++;
-                        }
-fwrite (&s[i], sizeof(char), 1, f);
+    {
+        fwrite (&s[i], sizeof(char), 1, f);
+        i++;
+    }
+    fwrite (&s[i], sizeof(char), 1, f);
 }
 
 void Levantar_String (string &s, FILE * f)
 {
+    strcrear(s);
+    string aux = new char[MAX];
     int i=0;
     char c;
     fread (&c, sizeof(char), 1, f);
     while (c != '\0')
     {
-        s[i]=c;
+        aux[i]=c;
         fread (&c, sizeof(char), 1, f);
         i++;
     }
-    s[i]=c;
+    aux[i]=c;
+    strcop(aux, s);
+    strdestruir(aux);
 }
