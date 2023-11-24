@@ -1,10 +1,3 @@
-//
-//  consulta.cpp
-//  Obligatorio 2
-//
-//  Created by Gonzalo Fleitas on 15/11/23.
-//
-
 #include "consulta.h"
 
 void cargarConsulta(consulta &a,long int ci,Fecha b){
@@ -16,7 +9,7 @@ void cargarConsulta(consulta &a,long int ci,Fecha b){
     a.ci=ci;
     cargarEvaluacion(a.eva);
     a.Fech=b;
-   
+
 }
 void mostrarConsulta(consulta a){
     printf("Fecha: ");
@@ -49,9 +42,10 @@ void bajarConsulta (consulta b, FILE * f){
     fwrite(&b.eva, sizeof(evaluacion), 1, f);
 }
 
-void levantarConsulta (consulta b, FILE * f){
+void levantarConsulta (consulta &b, FILE * f){
     fread (&b.Fech, sizeof(fecha), 1, f);
     Levantar_String(b.motivoConsulta, f);
     fread(&b.ci, sizeof(long int), 1, f);
     fread(&b.eva, sizeof(evaluacion), 1, f);
 }
+
