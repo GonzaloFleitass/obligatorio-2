@@ -17,4 +17,5 @@ boolean streq (string s1, string s2);//reciba dos strings y devuelva TRUE si amb
 
 void strswp (string &s1,string &s2);//reciba dos strings y devuelva el primero en el segundo y viceversa.
 void Bajar_String (string s, FILE * f);
+void Levantar_String (string &s, FILE * f);
 #endif // STRING_H_INCLUDED

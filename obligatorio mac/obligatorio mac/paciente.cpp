@@ -60,8 +60,8 @@ void bajarPaciente (Paciente p, FILE * f){
 
 void levantarPaciente (Paciente p, FILE * f){
     fread(&p.cedula, sizeof(long int), 1, f);
-    Bajar_String(p.nombre, f);
-    Bajar_String(p.apellido, f);
+    Levantar_String(p.nombre, f);
+    Levantar_String(p.apellido, f);
     fread(&p.telefono, sizeof(long int), 1, f);
     fread(&p.cantConsultas, sizeof(int), 1, f);
 }

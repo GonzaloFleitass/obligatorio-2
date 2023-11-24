@@ -59,10 +59,11 @@ void printOrden(ArboldePacientes a){
 void sinConsultas(ArboldePacientes a){
     if(a!=NULL){
         if(darCantCons( a->p)==0)
+	{
             mostrarPaciente(a->p);
             sinConsultas(a->hizq);
             sinConsultas(a->hder);
-        
+        ]
     }
 }
 

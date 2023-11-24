@@ -105,4 +105,16 @@ void Bajar_String (string s, FILE * f)
 fwrite (&s[i], sizeof(char), 1, f);
 }
 
-
+void Levantar_String (string &s, FILE * f)
+{
+    int i=0;
+    char c;
+    fread (&c, sizeof(char), 1, f);
+    while (c != '\0')
+    {
+        s[i]=c;
+        fread (&c, sizeof(char), 1, f);
+        i++;
+    }
+    s[i]=c;
+}

@@ -17,7 +17,6 @@
 		C4D0E7CF2B083F790088DA53 /* listaconsulta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D0E7C32B083F790088DA53 /* listaconsulta.cpp */; };
 		C4D0E7D02B083F790088DA53 /* menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D0E7C82B083F790088DA53 /* menu.cpp */; };
 		C4D0E7D12B083F790088DA53 /* boolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4D0E7C92B083F790088DA53 /* boolean.cpp */; };
-		C4FF1F362B0EB30C005DD28A /* archivo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4FF1F342B0EB30C005DD28A /* archivo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -67,8 +66,6 @@
 		C4D0E7C72B083F790088DA53 /* fecha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fecha.h; sourceTree = "<group>"; };
 		C4D0E7C82B083F790088DA53 /* menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = menu.cpp; sourceTree = "<group>"; };
 		C4D0E7C92B083F790088DA53 /* boolean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boolean.cpp; sourceTree = "<group>"; };
-		C4FF1F332B0EB2F8005DD28A /* archivo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = archivo.h; sourceTree = "<group>"; };
-		C4FF1F342B0EB30C005DD28A /* archivo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = archivo.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +117,6 @@
 				C4D0E7BB2B083F790088DA53 /* string.cpp */,
 				C4D0E7BC2B083F790088DA53 /* string.h */,
 				C4D0E7B22B083ED70088DA53 /* main.cpp */,
-				C4FF1F332B0EB2F8005DD28A /* archivo.h */,
-				C4FF1F342B0EB30C005DD28A /* archivo.cpp */,
 			);
 			path = "obligatorio mac";
 			sourceTree = "<group>";
@@ -186,7 +181,6 @@
 			files = (
 				C4D0E7CD2B083F790088DA53 /* evaluacion.cpp in Sources */,
 				C4D0E7D12B083F790088DA53 /* boolean.cpp in Sources */,
-				C4FF1F362B0EB30C005DD28A /* archivo.cpp in Sources */,
 				3996EFC62B0852B80096FC96 /* consulta.cpp in Sources */,
 				C4D0E7CB2B083F790088DA53 /* paciente.cpp in Sources */,
 				C4D0E7CA2B083F790088DA53 /* string.cpp in Sources */,
@@ -320,7 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F878S4GD94;
+				DEVELOPMENT_TEAM = 4LZJL334PC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
