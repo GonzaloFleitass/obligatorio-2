@@ -34,4 +34,6 @@ void darCiPacmasCons(ArboldePacientes a,long int &ci, int &cant);
 void cargaCiPacmasCons (ArboldePacientes a,long int &ci, int &cant);// Obtener la cedula del paciente con mayor cantidad de consultas.
 void bajarArbol (ArboldePacientes a, FILE * f);
 void levantarArbol (ArboldePacientes a, FILE * f);
+void abrirArbol (ArboldePacientes &a);
+void cerrarArbol (ArboldePacientes &a);
 #endif // ARBOLPACIENTES_H_INCLUDED
