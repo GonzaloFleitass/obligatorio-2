@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-24T21:58:05.288Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="hUJhXSOcy9A5_VmdAi2n" version="21.8.1" type="device">
+<mxfile host="app.diagrams.net" modified="2023-11-24T21:59:23.009Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="k5kZBcPR_uZzdsQuTJ4U" version="21.8.1" type="device">
   <diagram name="Página-1" id="cQBJPiFT9EdiWLjHy8WE">
     <mxGraphModel dx="2682" dy="1771" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
       <root>
@@ -100,18 +100,6 @@
         </mxCell>
         <mxCell id="C7Uv9WLbkiM16HJj1obP-23" value="ArbolPacientes.cpp" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1042.5" y="440" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="C7Uv9WLbkiM16HJj1obP-31" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;curved=1;endArrow=none;endFill=0;" parent="1" source="C7Uv9WLbkiM16HJj1obP-28" target="C7Uv9WLbkiM16HJj1obP-29" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="C7Uv9WLbkiM16HJj1obP-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="C7Uv9WLbkiM16HJj1obP-28" target="C7Uv9WLbkiM16HJj1obP-29" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="C7Uv9WLbkiM16HJj1obP-28" value="Consultorio.h" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="920" y="600" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="C7Uv9WLbkiM16HJj1obP-29" value="Consultorio.cpp" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="920" y="720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="C7Uv9WLbkiM16HJj1obP-33" value="Evaluacion.h" style="rounded=1;whiteSpace=wrap;html=1;glass=0;" parent="1" vertex="1">
           <mxGeometry x="420" y="570" width="120" height="60" as="geometry" />
