@@ -2,7 +2,7 @@
 
 void cargarEvaluacion(evaluacion &a){
     int b;
-    printf("Opcion 1-En Tratamiento\n 2-Necesita Protesis\n 3-Saludable");
+    printf("Opcion 1-En Tratamiento\n 2-Necesita Protesis\n 3-Saludable\nOpcion:");
     scanf("%d",&b);
     switch(b){
         case 1:a=EN_TRATAMIENTO;
@@ -11,7 +11,7 @@ void cargarEvaluacion(evaluacion &a){
             break;
         case 3:a=SALUDABLE;
             break;
-        default:printf("opcion incorrecta");
+        default:printf("Opcion incorrecta");
     }
 }
 void mostrarEvaluacion(evaluacion a){
