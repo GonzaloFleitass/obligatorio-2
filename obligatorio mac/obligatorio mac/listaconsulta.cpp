@@ -49,7 +49,7 @@ void contadorTiposConsulta(Lista z,int &a,int &b,int &c){
     b=0;
     c=0;
     while(z!=NULL){
-       
+
         switch(devolverEvaluacionConsulta(z->con)){
             case EN_TRATAMIENTO: a++;
                 break;
@@ -58,11 +58,11 @@ void contadorTiposConsulta(Lista z,int &a,int &b,int &c){
             case NECESITA_PROTESIS: c++;
                 break;
         }
-        
+
         z=z->sig;
     }
-    
-    
+
+
 }
 void mostrarConsultasCI(Lista li,long int ci){
     while(li!=NULL){
@@ -98,23 +98,25 @@ void bajarLista (Lista l, FILE *f){
     }
 }
 
-void levantarLista(Lista l, FILE * f){
-    while(l!=NULL){
-        levantarConsulta(l->con, f);
-        l=l->sig;
+void levantarLista(Lista &l, FILE * f){
+    consulta con;
+    levantarConsulta(con, f);
+    while(!feof(f)){
+        InsFrontConsulta(l, con);
+        levantarConsulta(con, f);
     }
 }
 
 void abrirLista(Lista &l){
+  Crear(l);
   FILE * f =fopen ("Consultas.dat", "rb");
-    if (f==NULL)
-        Crear(l);
-    else
+
+  if (f!=NULL)
         levantarLista(l, f);
-    fclose(f);
+
 }
 
-void cerrarLista (Lista &l){
+void cerrarLista (Lista l){
     FILE * f = fopen ("Consultas.dat", "wb");
     bajarLista(l, f);
     fclose (f);
