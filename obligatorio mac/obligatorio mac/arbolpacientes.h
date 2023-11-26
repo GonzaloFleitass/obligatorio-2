@@ -11,23 +11,15 @@ typedef struct nodoA {
 
 typedef nodo * ArboldePacientes;
 
-void Crear (ArboldePacientes &a);
-
-void Insert (ArboldePacientes &a, Paciente p);
-
-boolean Pertenece (ArboldePacientes a, long int ci);
-
-boolean EsVacio (ArboldePacientes a);
-
-void printOrden(ArboldePacientes a);
-
-void sinConsultas(ArboldePacientes a);
-
-Paciente minimo (ArboldePacientes a);
-
-void borrarminimo (ArboldePacientes &a);
-
-void borrar (ArboldePacientes &a, Paciente p);
+void Crear (ArboldePacientes &a);// Crea un arbol, apunta a a NULL
+void Insert (ArboldePacientes &a, Paciente p);// Inserta un nuevo paciente
+boolean Pertenece (ArboldePacientes a, long int ci);// Dada una cedula devuelve si el paciente pertenece al arbol
+boolean EsVacio (ArboldePacientes a);//Devuelve true si el arbol es vacio o False si no
+void printOrden(ArboldePacientes a);//Muestra todos los pacientes del arbol en orden de menor a mayor por cedula
+void sinConsultas(ArboldePacientes a);//Muestra por pantalla los pacientes que aun no tienen ninguna consulta.
+Paciente minimo (ArboldePacientes a);//Devuelve el paciente con la cedula mas chica
+void borrarminimo (ArboldePacientes &a);//Borra el paciente con la cedula mas chica
+void borrar (ArboldePacientes &a, Paciente p);//
 void buscarPacienteXcantConsu(ArboldePacientes a, int consulta);
 void sumarConsultaPaciente (ArboldePacientes a, long int ci);
 void darCiPacmasCons(ArboldePacientes a,long int &ci, int &cant);
