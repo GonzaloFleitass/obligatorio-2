@@ -26,14 +26,6 @@ void DesplegarListaFecha(Lista l,Fecha a){
         l=l->sig;
     }
 }
-void DesplegarConsultasPacienteCI(Lista l, long int  CI){
-        while (l != NULL){
-            if (devolverCiConsulta(l->con) == CI){
-                mostrarConsulta(l->con);
-                l = l ->sig;
-            }
-        }
-    }
 
 Fecha devolverFechaUltimo(Lista l){
     return devolverFechConsulta(l->con);

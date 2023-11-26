@@ -14,15 +14,14 @@ void Crear (Lista &l);// Crea nueva lista
 void InsFrontConsulta (Lista &l, consulta c);// Inserta una consulta en el frente de la lista
 void DesplegarLista (Lista l);//Desplegar lista
 void DesplegarListaFecha(Lista l,Fecha a);//despleiga lista con el filtro de buscar por fecha
-void DesplegarConsultasPacienteCI(Lista l, long int CI);
-Fecha devolverFechaUltimo(Lista l);
-boolean vacia(Lista a);
-void contadorTiposConsulta(Lista z,int &a,int &b,int &c);
-void mostrarConsultasCI(Lista a,long int ci);
-void cantConsultasFecha(Lista consultas,fecha fech3);
-void bajarLista (Lista l, FILE * f);
-void levantarLista (Lista &l, FILE * f);
-void abrirLista(Lista &l);
-void cerrarLista (Lista l);
+Fecha devolverFechaUltimo(Lista l);//Devuelve la fecha de la ultima consulta
+boolean vacia(Lista a);// Devuelve TRUE cuando la lista es vacia o FALSE sino lo es.
+void contadorTiposConsulta(Lista z,int &a,int &b,int &c);//Cuenta y devuelve cuantas consultas de cada tipo hay segun diagnostico.
+void mostrarConsultasCI(Lista a,long int ci);//Dada una cedula devuelve las consutas de ese paciente.
+void cantConsultasFecha(Lista consultas,fecha fech3);//Dada una fecha, devuelve la cantidad de consultas de esa fecha.
+void bajarLista (Lista l, FILE * f);//Baja la lista.
+void levantarLista (Lista &l, FILE * f);//Levanta una lista.
+void abrirLista(Lista &l);//Abre una lista desde un archivo, sino hay una, la crea.
+void cerrarLista (Lista l);// Guarda la lista en un archivo.
 
 #endif // LISTACONSULTA_H_INCLUDED
