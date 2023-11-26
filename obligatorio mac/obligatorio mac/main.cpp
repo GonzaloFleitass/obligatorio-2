@@ -35,6 +35,7 @@ int main() {
                         }else{
                             cargarPaciente(p, ci);
                             Insert(a, p);
+                            printf("Paciente cargado con exito");
                         }
                         system("pause");
                         break;
@@ -42,7 +43,7 @@ int main() {
                         printf("Ingrese CI del paciente que desea eliminar:");
                         scanf("%ld",&ci);
                         if(Pertenece(a, ci)){
-                            borrar(a,p);
+                            borrar(a,ci);
                             printf("Paciente eliminado\n");
                         }else{
                             printf("El paciente no existe\n");
@@ -82,6 +83,7 @@ int main() {
                                     InsFrontConsulta(consultas,c);
                                     sumarConsultaPaciente(a, ci2);
                                     //buscar paciente con ci y sumarle una consulta
+                                    printf("Consulta cargada con exito");
                                 }
                                 else{
                                     if(comparaFechaPosterior(fech2, devolverFechaUltimo(consultas))==TRUE){
@@ -89,22 +91,31 @@ int main() {
                                         InsFrontConsulta(consultas,c);
                                         sumarConsultaPaciente(a, ci2);
                                         //buscar paciente con ci y sumarle una consulta
+                                        printf("Consulta cargada con exito");
                                     }else{
                                         printf("El paciente no esta registrado");
                                     }
                                 }
                             }
+                            else
+                            {
+                                printf("Fecha invalida\n");
+                            }
+                        }
+                        else
+                        {
+                            printf("El paciente no esta registrado\n");
                         }
 
                                 system("pause");
                                 break;
                             case 2:long int ciBusca;
-                                printf("ingrese Ci a buscar:");
+                                printf("Ingrese Ci a buscar:");
                                 scanf("%ld",&ciBusca);
                                 mostrarConsultasCI(consultas,ciBusca);
                                 system("pause");
                                 break;
-                            case 3:printf("Ingrese Fecha");
+                            case 3:printf("Ingrese Fecha:");
                                 CargaFech(fech);
                                 DesplegarListaFecha(consultas,fech);
                                 system("pause");
