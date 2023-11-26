@@ -19,7 +19,7 @@ void printOrden(ArboldePacientes a);//Muestra todos los pacientes del arbol en o
 void sinConsultas(ArboldePacientes a);//Muestra por pantalla los pacientes que aun no tienen ninguna consulta.
 Paciente minimo (ArboldePacientes a);//Devuelve el paciente con la cedula mas chica
 void borrarminimo (ArboldePacientes &a);//Borra el paciente con la cedula mas chica
-void borrar (ArboldePacientes &a, Paciente p);//Dada una cedula borra el paciente.
+void borrar (ArboldePacientes &a, long int ci);//Dada una cedula borra el paciente.
 void buscarPacienteXcantConsu(ArboldePacientes a, int consulta);// Muestra un pantalla los pacientes con x cantidad de consultas.
 void sumarConsultaPaciente (ArboldePacientes a, long int ci);//Suma una consulta a un paciente.
 void darCiPacmasCons(ArboldePacientes a,long int &ci, int &cant);//Devuelve la cedula del paciente con mas consultas junto con la cantidad de consultas
