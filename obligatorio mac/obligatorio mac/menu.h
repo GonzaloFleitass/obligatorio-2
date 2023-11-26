@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 
-void mostarmenu1( int &opcion);
-void submenualtasybajas (int &opcionsub1);
-void submenuconsultas (int &opcionsub2);
+void mostarmenu1( int &opcion);//Mustrea menu principal.
+void submenualtasybajas (int &opcionsub1);//Muestra sub menu de pacientes
+void submenuconsultas (int &opcionsub2);// Muestra sub  menu de consultas
 
 
 

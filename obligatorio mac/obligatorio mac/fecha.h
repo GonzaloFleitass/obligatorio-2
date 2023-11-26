@@ -17,7 +17,7 @@ int darmes (Fecha fec);// Devuelve mes
 int daranio (Fecha fec);// Devuelve año
 boolean fechavalida (Fecha fec);//Valida fecha valida
 boolean comparaFecha(Fecha a, Fecha b);//compara dos fecha si son iguales o no
-boolean comparaFechaPosterior(Fecha a, Fecha b);
+boolean comparaFechaPosterior(Fecha a, Fecha b);// Compara si una fechanes igual o posterior.
 
 
 #endif // FECHA_H_INCLUDED
