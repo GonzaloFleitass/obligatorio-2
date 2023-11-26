@@ -95,10 +95,10 @@ void borrarminimo (ArboldePacientes &a)
 
 /* borra un valor cualquiera del arbol */
 /* Precondición : paciente está en el arbol a */
-void borrar (ArboldePacientes &a, Paciente p)
+void borrar (ArboldePacientes &a, long int ci)
 {
 	ArboldePacientes aux;
-	if (darCedPac(p) == darCedPac(a->p))
+	if (ci == darCedPac(a->p))
 	{
 		if (a->hder == NULL)
 		{
@@ -123,12 +123,13 @@ void borrar (ArboldePacientes &a, Paciente p)
 	}
 	else
 	{
-		if (darCedPac(p) < darCedPac(a->p))
-			borrar (a->hizq, p);
+		if (ci < darCedPac(a->p))
+			borrar (a->hizq, ci);
 		else
-			borrar (a->hder, p);
+			borrar (a->hder, ci);
 	}
 }
+
 void buscarPacienteXcantConsu(ArboldePacientes a, int consulta){
     if(a!=NULL){
         if(darCantCons(a->p)==consulta){
